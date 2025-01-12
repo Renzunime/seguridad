@@ -40,132 +40,341 @@
       </nav>
     </header>
   </div>
-  <div id="pageintro" class="hoc clear"> 
-    <div class="flexslider basicslider">
-      <ul class="slides">
-        <li>
-          <article>
-            <p>Biblioteca</p>
-            <h3 class="heading">Accede a la biblioteca</h3>
-            <p>Catálogo de Bases de Datos</p>
-            <footer><a class="btn" href="#">Ingresar</a></footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <p>Internet</p>
-            <h3 class="heading">Encuentra las claves wifi</h3>
-            <p>Conéctate a la red gratuita de la facultad</p>
-            <footer><a class="btn" href="#">Ingresar</a></footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <p>Centro de Salud</p>
-            <h3 class="heading">Reserva tu cita</h3>
-            <p>Toma una cita para el centro de salud</p>
-            <footer><a class="btn" href="#">Ingresar</a></footer>
-          </article>
-        </li>
-      </ul>
-    </div>
+  
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <section id="calendario-academico" style="padding: 40px 0;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Calendario Académico</h2>
+        <p style="text-align: center; margin-bottom: 40px;">Fechas de interés académico para los estudiantes politécnicos.</p>
+  
+        <!-- Año 2023 -->
+        <div class="calendario-item">
+          <h3 class="calendario-titulo" style="font-size: 24px; font-weight: bold; margin-bottom: 20px; cursor: pointer;" onclick="toggleCalendario('calendario-2023')">
+            2023
+          </h3>
+          <div id="calendario-2023" class="calendario-content" style="display: none;">
+            <h4>ENERO</h4>
+            <ul>
+              <li><strong>3</strong> Reinicio de actividades.</li>
+              <li><strong>25-31</strong> Recepción de pruebas del tercer parcial.</li>
+              <li><strong>25-31</strong> Consignación de calificaciones del tercer parcial. (Fecha improrrogable)</li>
+              <li><strong>23-27</strong> Entrega, revisión y aprobación de la propuesta del Distributivo de carga académica de profesores de las facultades y sedes matriz Riobamba, Morona Santiago y Orellana al Vicerrectorado Académico.</li>
+              <li><strong>27</strong> Publicación de horarios de exámenes principales y de recuperación.</li>
+              <li><strong>31</strong> Último día de clases.</li>
+            </ul>
+            <h4>FEBRERO</h4>
+            <ul>
+              <li><strong>1-7</strong> Exámenes principales.</li>
+              <li><strong>1-10</strong> Consignación de calificaciones exámenes principales. (Fecha improrrogable)</li>
+              <li><strong>8-14</strong> Cursos de reforzamiento académico.</li>
+              <li><strong>13-17</strong> Recepción de documentos para procesos de homologación (convalidación) de asignaturas para movilidad externa en la Secretaria Académica de Grado.</li>
+              <li><strong>15-23</strong> Exámenes de recuperación.</li>
+              <li><strong>15-28</strong> Consignación de calificaciones de exámenes de recuperación. (Fecha improrrogable)</li>
+              <li><strong>20-21</strong> Feriado por Carnaval.</li>
+            </ul>
+            <h4>Marzo</h4>
+            <ul>
+              <li><strong>1</strong> FIN PERIODO ACADÉMICO ORDINARIO</li>
+              <li><strong>2</strong> Cierre del Sistema Académico OASIS, período académico ordinario octubre/2022-marzo/2023</li>
+              <li><strong>3</strong> Ingreso de la información al sistema académico OASIS para el proceso de matrícula para el período académico abril -agosto/ 2023.</li>
+              <li><strong>6-10</strong> Inicio matrículas ordinarias según cronograma de Facultades y Sedes Morona Santiago y Orellana.</li>
+              <li><strong>6-10</strong> Inicio periodo para solicitar cambio de carrera,  y convalidación de asignaturas en la Secretaria Académica de Grado. (interna, traspaso y registro de información al SAI movilidad externa)</li>
+              <li><strong>15</strong> Análisis del distributivo de carga académica en la Comisión Académica Institucional.</li>
+              <li><strong>13-17</strong> Matrículas extraordinarias según cronograma de sedes, matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>20-22</strong> MATRÍCULAS ORDINARIAS PARA ESTUDIANTES DEL PAO 1.(Estudiantes que aprobaron la nivelación de Carrera en el Período Académico Noviembre 2022 – Marzo 2023)</li>
+              <li><strong>23-24</strong> MATRICULAS EXTRAORDINARIAS PARA ESTUDIANTES DEL PAO 1. (Estudiantes que aprobaron la nivelación de Carrera en el Período Académico Noviembre 2022 – Marzo 2023)</li>
+              <li><strong>20-31</strong> Capacitación, elaboración y entrega de los instrumentos académicos, previo al inicio de clases (cronograma DDA).</li>
+            </ul>
+            <h4>ABRIL</h4>
+            <ul>
+              <li><strong>3</strong> INICIO DE CLASES PARA EL PERIODO ACADÉMICO ABRIL/AGOSTO 2023.</li>
+              <li><strong>4</strong> Último plazo para asentamiento de matrículas especiales (provisionales en recalificación, reconocimiento y homologación).</li>
+              <li><strong>7</strong> Viernes Santo (feriado nacional).</li>
+              <li><strong>21</strong> Independencia de Riobamba (feriado local).</li>
+            </ul>
+            <h4>MAYO</h4>
+            <ul>
+              <li><strong>1</strong> Día del Trabajo (feriado nacional de acuerdo con la reforma de la Ley Orgánica de Servicio Público).</li>
+              <li><strong>2</strong> Aniversario Institucional</li>
+              <li><strong>3</strong> Último plazo para presentar solicitudes de retiro</li>
+              <li><strong>8-12</strong> Recepción de pruebas del primer parcial</li>
+              <li><strong>8-14</strong> Consignación de calificaciones del primer parcial (fecha improrrogable).</li>
+              <li><strong>26</strong> Batalla de Pichincha (feriado nacional de acuerdo con las reformas de la Ley Orgánica del Servicio Público).</li>
+            </ul>
+            <h4>JUNIO</h4>
+            <ul>
+              <li><strong>12-16</strong> Recepción de pruebas del segundo parcial</li>
+              <li><strong>12-18</strong> Consignación de calificaciones del segundo parcial</li>
+              <li><strong>19-23</strong> Entrega, revisión y aprobación de la propuesta del Distributivo de carga académica de profesores de las sedes, Matriz Riobamba, Morona Santiago y Orellana al Vicerrectorado Académico</li>
+            </ul>
+            <h4>JULIO</h4>
+            <ul>
+              <li><strong>24</strong> Inicio de Actividades de refuerzo académico</li>
+            </ul>
+            <h4>AGOSTO</h4>
+            <ul>
+              <li><strong>2</strong> Fin de actividades de refuerzo académico</li>
+              <li><strong>3-9</strong> Recepción de pruebas del tercer parcial</li>
+              <li><strong>7-10</strong> Recepción de documentos para procesos de homologación (convalidación) de asignaturas para movilidad externa en la Secretaría Académica de Grado</li>
+              <li><strong>9</strong> Último día de clases</li>
+              <li><strong>9</strong> Análisis del distributivo de carga académica por la Comisión Académica Institucional</li>
+              <li><strong>10</strong> Publicación de horario de exámenes principales y exámenes de recuperación</li>
+              <li><strong>10-13</strong> Consignación de calificaciones del tercer parcial (fecha improrrogable)</li>
+              <li><strong>11</strong> Primer Grito de la Independencia (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público)</li>
+              <li><strong>14-18</strong> Exámenes Principales</li>
+              <li><strong>15-20</strong> Consignación de calificaciones exámenes principales (fecha improrrogable)</li>
+              <li><strong>21-25</strong> Exámenes de recuperación</li>
+              <li><strong>22-27</strong> Consignación de calificaciones exámenes de recuperación (fecha improrrogable)</li>
+              <li><strong>28</strong> Fin de periodo académico ordinario</li>
+              <li><strong>28</strong> Inicio del receso académico</li>
+            </ul>
+            <h4>SEPTIEMBRE</h4>
+            <ul>
+              <li><strong>15</strong> Fin del receso académico</li>
+              <li><strong>18</strong> Reinicio de actividades</li>
+              <li><strong>18-19</strong> Capacitación para el proceso de inscripción de estudiantes nuevos a la ESPOCH, cierre del Sistema Académico YANKAY, período académico ordinario abril-agosto/2023.</li>
+              <li><strong>18-19</strong> Ingreso de información al sistema académico YANKAY para el proceso de matrículas para el periodo octubre / 2023 – marzo / 2024</li>
+              <li><strong>18-29</strong> Capacitación, elaboración y entrega de los instrumentos académicos, previo al inicio de clases (cronograma DDA).</li>
+              <li><strong>20-26</strong> Periodo para solicitar cambio de carrera y convalidación de asignaturas en el Decanato Académico de Grado. (movilidad  interna, traspaso, ingreso de información al SAI YANKAY de estudiantes que fueron admitidos por movilidad externa).</li>
+              <li><strong>20-26</strong> Matrículas ordinarias según cronograma de sedes, matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>20-26</strong> Período para presentar solicitudes y autorización de terceras matrículas; y, solicitudes de reingreso.</li>
+              <li><strong>27</strong> Inicio de matrículas extraordinarias según cronograma de sedes, matriz Riobamba, Morona Santiago y Orellana.</li>
+            </ul>
+            <h4>OCTUBRE</h4>
+            <ul>
+              <li><strong>3</strong> Fin de matrículas extraordinarias según cronograma de sedes, matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>9</strong> Independencia de Guayaquil  (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público)</li>
+              <li><strong>10</strong> Inicio de clases para el periodo académico octubre / 2023 – marzo / 2024</li>
+              <li><strong>23</strong> Último plazo para asentamientos de matrículas especiales (provisionales en proceso de: recalificación, reconocimiento y homologaciones)</li>
+            </ul>
+            <h4>NOVIEMBRE</h4>
+            <ul>
+              <li><strong>2-3</strong> Día de los Difuntos e Independencia de Cuenca (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público)</li>
+              <li><strong>10</strong> Último plazo para presentar solicitudes de retiro</li>
+              <li><strong>20-24</strong> Recepción de pruebas del primer parcial</li>
+              <li><strong>20-26</strong> Consignación de calificaciones del primer parcial (fecha improrrogable)</li>
+            </ul>
+            <h4>DICIEMBRE</h4>
+            <ul>
+              <li><strong>25-29</strong> Receso Académico Institucional (fin de año)</li>
+              <li>Ingreso de información al sistema académico YANKAY para el proceso de matrículas para el período octubre/2023- marzo/2024.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Año 2024 -->
+        <div class="calendario-item">
+          <h3 class="calendario-titulo" style="font-size: 24px; font-weight: bold; margin-bottom: 20px; cursor: pointer;" onclick="toggleCalendario('calendario-2024')">
+            2024
+          </h3>
+          <div id="calendario-2024" class="calendario-content" style="display: none;">
+            <h4>ENERO</h4>
+            <ul>
+              <li><strong>2</strong> Reinicio de actividades.</li>
+              <li><strong>3-9</strong> Recepción de pruebas del segundo parcial.</li>
+              <li><strong>3-14</strong> Consignación de calificaciones del segundo parcial (fecha improrrogable).</li>
+            </ul>
+            <h4>FEBRERO</h4>
+            <ul>
+              <li><strong>7</strong> Publicación de horarios de exámenes principales y de recuperación.</li>
+              <li><strong>9</strong> Último día de clases.</li>
+              <li><strong>5-9</strong> Recepción de pruebas del tercer parcial.</li>
+              <li><strong>5-14</strong> Consignación de calificaciones del tercer parcial (fecha improrrogable)</li>
+              <li><strong>12-13</strong> Feriado por Carnaval</li>
+              <li><strong>15-21</strong> Examenes principales</li>
+              <li><strong>15-25</strong> Consignación de calificaciones exámenes principales (fecha improrrogable)</li>
+              <li><strong>26-29</strong> Actividades de refuerzo academico</li>
+            </ul>
+            <h4>Marzo</h4>
+            <ul>
+              <li><strong>1</strong> Fin  de actividades de refuerzo académico.</li>
+              <li><strong>4-8</strong> Exámenes de recuperación.</li>
+              <li><strong>4-8</strong> Recepción de documentos para procesos de homologación (convalidación) de asignaturas para movilidad externa en el Decanato Académico.</li>
+              <li><strong>4-8</strong> Entrega, revisión y aprobación de la propuesta del Distributivo de carga académica de profesores de las sedes matriz Riobamba, Morona Santiago y Orellana al Vicerrectorado Académico.</li>
+              <li><strong>4-10</strong> Consignación de calificaciones exámenes recuperación.</li>
+              <li><strong>11</strong> Cierre del Sistema Académico período académico ordinario octubre 2023 – marzo 2024.</li>
+              <li><strong>12-15</strong> Capacitación sobre ingreso de información al sistema académico YANKAY previo al proceso de matrículas para el período académico ordinario abril-agosto 2024 (cronograma Decanato Académico).</li>
+              <li><strong>11-28/</strong> Capacitación, registro y legalización de los instrumentos y herramientas de la gestión académica, previo al inicio de clases (cronograma DDA).</li>
+              <li><strong>11-28</strong> Eventos de formación y capacitación: específicos, pedagógicos y didácticos dirigidos al Personal Académico y Técnico Docente de acuerdo con el Plan aprobado por Consejo Politécnico.</li>
+              <li><strong>18-22</strong> Período para presentar solicitudes, autorización de terceras matrículas; y, solicitudes de reingresos.</li>
+              <li><strong>18-22</strong> Periodo para solicitar cambio de carrera,  y convalidación de asignaturas en el Decanato Académico (interna, traspaso y registro de información al SAI YANKAY de estudiantes que fueron admitidos por  movilidad externa ).</li>
+              <li><strong>18-22</strong> Inicio matrículas ordinarias según cronograma de  sedes matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>20</strong> Análisis del distributivo de carga académica en la Comisión Académica Institucional.</li>
+              <li><strong>25</strong> Inicio matrículas extraordinarias según cronograma de sedes matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>25-28</strong> Adaptación y ambientación dirigida a los estudiantes de nivelación y PAO 1 coordinado por cada facultad/sede, DDA, Decanato de Admisión y Nivelación  y Talento Humano.</li>
+              <li><strong>29</strong> Viernes Santo (feriado nacional).</li>
+            </ul>
+            <h4>ABRIL</h4>
+            <ul>
+              <li><strong>1</strong> INICIO DE CLASES PARA EL PERIODO ACADEMICO ORDINARIO ABRIL – AGOSTO 2024.</li>
+              <li><strong>1</strong> Fin matrículas extraordinarias según cronograma de sedes matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>22</strong> Independencia de Riobamba (feriado local).</li>
+              <li><strong>23</strong> Último plazo para asentamiento de matrículas especiales ( provisionales en proceso de: recalificación, reconocimiento, homologación y tercera matrícula).</li>
+            </ul>
+            <h4>MAYO</h4>
+            <ul>
+              <li><strong>1</strong> Último plazo para presentar solicitudes de retiro estudiantes de carrera.</li>
+              <li><strong>1</strong> Último plazo para presentar solicitudes de retiro temporal estudiantes de nivelación.</li>
+              <li><strong>2</strong> Aniversario Institucional.</li>
+              <li><strong>3</strong> Día del Trabajo (feriado nacional de acuerdo con la reforma de la Ley Orgánica de Servicio Público).</li>
+              <li><strong>13-17</strong> Recepción de pruebas del primer parcial</li>
+              <li><strong>13-19</strong> Consignación de calificaciones del primer parcial (fecha improrrogable).</li>
+              <li><strong>24</strong> Batalla de Pichincha (feriado nacional de acuerdo con las reformas de la Ley Orgánica del Servicio Público).</li>
+            </ul>
+            <h4>JUNIO</h4>
+            <ul>
+              <li><strong>17-21</strong> Recepción de pruebas del segundo parcial</li>
+              <li><strong>17-23</strong> Consignación de calificaciones del segundo parcial (fecha improrrogable)</li>
+            </ul>
+            <h4>JULIO</h4>
+            <ul>
+              <li><strong>22-26</strong> Entrega, revisión y aprobación de la propuesta del distributivo de carga académica de profesores de las sedes matriz Riobamba, Morona Santiago y Orellana al Vicerrectorado Académico.</li>
+              <li><strong>22-26</strong> Recepción de pruebas del tercer parcial.</li>
+              <li><strong>22-28</strong> Consignación del tercer parcial (fecha improrrogable).</li>
+              <li><strong>24</strong> Publicación de horarios de exámenes principales y de recuperación.</li>
+              <li><strong>26</strong> Último día de clases.</li>
+              <li><strong>29</strong> Inicio del período exámenes principales.</li>
+              <li><strong>29</strong> Inicio consignación de calificaciones exámenes principales.</li>
+            </ul>
+            <h4>AGOSTO</h4>
+            <ul>
+              <li><strong>2</strong> Fin período exámenes principales.</li>
+              <li><strong>4</strong> Fin consignación de calificaciones exámenes principales (fecha improrrogable).</li>
+              <li><strong>5-8</strong> Recepción de documentos para procesos de homologación (convalidación) de asignaturas para movilidad externa en el Decanato Académico.</li>
+              <li><strong>5-8</strong> Actividades de refuerzo académico.</li>
+              <li><strong>9</strong> Primer Grito de la Independencia (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+              <li><strong>12-16</strong> Exámenes de recuperación.</li>
+              <li><strong>12-18</strong> Consignación de calificaciones exámenes de recuperación (fecha improrrogable).</li>
+              <li><strong>14</strong> Análisis del distributivo de carga académica en la Comisión Académica Institucional.</li>
+              <li><strong>19</strong> FIN PERIODO ACADEMICO ORDINARIO ABRIL – AGOSTO 2024.</li>
+              <li><strong>19</strong> Cierre del Sistema Académico, período académico ordinario abril – agosto 2024.</li>
+              <li><strong>20</strong> Inicio capacitación, registro y legalización de los instrumentos y herramientas de la gestión académica, previo al inicio de clases (cronograma DDA).</li>
+              <li><strong>20</strong> Eventos de formación y capacitación: específicos, pedagógicos y didácticos dirigidos al Personal Académico y Técnico Docente de acuerdo con el Plan aprobado por Consejo Politécnico.</li>
+              <li><strong>20-23</strong> Capacitación sobre ingreso de información al sistema académico YANKAY previo al proceso de matrículas para el período académico ordinario octubre 2024 – marzo 2025 (cronograma Decanato Académico).</li>
+              <li><strong>26-30</strong> Período para presentar solicitudes, autorización de terceras matrículas; y, solicitudes de reingresos.</li>
+              <li><strong>26-30</strong> Periodo para solicitar cambio de carrera,  y convalidación de asignaturas en el Decanato Académico (interna, traspaso y registro de información al SAI YANKAY de estudiantes que fueron admitidos por  movilidad externa ).</li>
+              <li><strong>26-30</strong> Matrículas ordinarias según cronograma de  sedes matriz Riobamba, Morona Santiago y Orellana.</li>
+            </ul>
+            <h4>SEPTIEMBRE</h4>
+            <ul>
+              <li><strong>2-6</strong> Período de matrículas extraordinaria, según cronograma de sedes matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>6</strong> Fin capacitación, elaboración y entrega de los instrumentos académicos, previo al inicio de clases (cronograma DDA).</li>
+              <li><strong>6</strong> Fin de eventos de formación y capacitación: específicos, pedagógicos y didácticos dirigidos al Personal Académico y Técnico Docente de acuerdo con el Plan aprobado por Consejo Politécnico.</li>
+              <li><strong>9-27</strong> RECESO ACADÉMICO.</li>
+              <li><strong>30</strong> Inicio de actividades /Último plazo para asentamiento de matrículas especiales ( provisionales en proceso de: recalificación, reconocimiento, homologación y tercera matrícula).</li>
+            </ul>
+            <h4>OCTUBRE</h4>
+            <ul>
+              <li><strong>1-4</strong> Revisión y ajuste de cursos y paralelos, adecuaciones físicas, aulas y laboratorios.</li>
+              <li><strong>7</strong> INICIO DE CLASES PARA EL PERIODO ACADÉMICO ORDINARIO OCTUBRE 2024- FEBRERO 2025.</li>
+              <li><strong>11</strong> Independencia de Guayaquil (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+            </ul>
+            <h4>NOVIEMBRE</h4>
+            <ul>
+              <li><strong>1-4</strong> Día de los Difuntos e Independencia de Cuenca (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público)</li>
+              <li><strong>7</strong> Último plazo para solicitar retiro</li>
+              <li><strong>15</strong> Último plazo de legalización de matrículas del periodo Académico OCTUBRE 2024 – FEBRERO 2025 (Coordinadores de Carrera – Analistas de Despacho).</li>
+            </ul>
+            <h4>DICIEMBRE</h4>
+            <ul>
+              <li><strong>2-8</strong> Consignación de calificaciones de Medio Ciclo (fecha improrrogable).</li>
+              <li><strong>25</strong> Receso Académico Institucional (fin de año)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Año 2025 -->
+        <div class="calendario-item">
+          <h3 class="calendario-titulo" style="font-size: 24px; font-weight: bold; margin-bottom: 20px; cursor: pointer;" onclick="toggleCalendario('calendario-2025')">
+            2025
+          </h3>
+          <div id="calendario-2025" class="calendario-content" style="display: none;">
+            <h4>ENERO</h4>
+            <ul>
+              <li><strong>3</strong> Fin del receso Académico Institucional (fin de año).</li>
+              <li><strong>3-9</strong> Reinicio de actividades</li>
+            </ul>
+            <h4>FEBRERO</h4>
+            <ul>
+              <li><strong>14</strong> Último día de clases.</li>
+              <li><strong>10-16</strong> Consignación de calificaciones de Fin de Ciclo (fecha improrrogable)</li>
+              <li><strong>17</strong> Fecha máxima para la carga de evidencias del personal académico en el repositorio institucional de evidencias de los profesores (RIEP) y legalización de instrumentos académicos de fin de ciclo, previo al proceso de coevaluación docente.</li>
+              <li><strong>17-21</strong> Actividades de refuerzo académico.</li>
+              <li><strong>17-21</strong> Entrega, revisión y aprobación de la propuesta del distributivo de carga académica de profesores de las Sedes: Matriz Riobamba, Morona Santiago y Orellana al Vicerrectorado Académico.</li>
+              <li><strong>19</strong> Publicación de horarios de evaluaciones de recuperación.</li>
+              <li><strong>24-28</strong> Evaluaciones de recuperación.</li>
+              <li><strong>24-28</strong> Recepción de documentos para procesos de homologación (convalidación) de asignaturas para movilidad externa en el Decanato Académico.</li>
+              <li><strong>24 - 2 de marzo</strong> Consignación de calificaciones de Evaluaciones de Recuperación (fecha improrrogable).</li>
+            </ul>
+            <h4>Marzo</h4>
+            <ul>
+              <li><strong>3-4</strong> Feriado por carnaval (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+              <li><strong>5</strong> Cierre del sistema académico y fin del periodo académico ordinario octubre 2024 – febrero 2025.</li>
+              <li><strong>5</strong> Análisis del distributivo de carga académica en la comisión académica institucional.</li>
+              <li><strong>5-7</strong> Capacitación sobre ingreso de información al sistema académico YANKAY previo al proceso de matrículas para el período académico ordinario marzo 2025 – julio 2025 (cronograma Decanato Académico).</li>
+              <li><strong>6-7</strong> Ingreso de información al sistema académico YANKAY previo al proceso de matrículas para el período académico ordinario marzo 2025 – julio 2025 (Coordinador/ de carrera y Analista General de Despacho).</li>
+              <li><strong>10-14</strong> Periodo para solicitar cambio de carrera, y homologación (convalidación) de asignaturas en el Decanato Académico (interna, traspaso y registro de información de sistema académico YANKAY de estudiantes que fueron admitidos por movilidad 2025 externa).</li>
+              <li><strong>10-14</strong> Periodo para presentar solicitudes, autorización de terceras matrículas; y, solicitudes de reingresos.</li>
+              <li><strong>10-14/</strong> Matrículas ordinarias según cronograma de sedes: matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>10-14</strong> Capacitación, registro y legalización de los instrumentos y herramientas de la gestión académica, previo al inicio de clases de acuerdo a las políticas académicas.</li>
+              <li><strong>10-14</strong> Eventos de formación y capacitación: específicos, pedagógicos didácticos dirigidos al personal académico y técnico docente de acuerdo con el plan aprobado por Consejo Politécnico.</li>
+              <li><strong>10-14</strong> Revisión y ajustes de cursos y paralelos, adecuaciones físicas, aulas y laboratorios.</li>
+              <li><strong>17-21</strong> Periodo de matrículas extraordinaria, según cronograma de sedes: matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>24</strong> INICIO DE CLASES PERIODO ACADÉMICO ORDINARIO MARZO 2025 – JULIO 2025.</li>
+            </ul>
+            <h4>ABRIL</h4>
+            <ul>
+              <li><strong>11</strong> Último plazo para asentamiento de matrículas especiales( provisionales en proceso de: recalificación , reconocimiento, homologación y tercera matrícula).</li>
+              <li><strong>18</strong> Viernes Santo (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+              <li><strong>21</strong> Independencia de Riobamba (feriado local).</li>
+              <li><strong>24</strong> Último plazo para presentar solicitudes de retiro.</li>
+              <li><strong>30</strong> Último plazo de legalización de matrículas del periodo Académico marzo 2025 – julio 2025 (Coordinadores de Carrera – Analistas de Despacho).</li>
+            </ul>
+            <h4>MAYO</h4>
+            <ul>
+              <li><strong>2</strong> Aniversario Institucional</li>
+              <li><strong>2</strong> Día del trabajo (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+              <li><strong>19-26</strong> Consignación de calificaciones de Medio Ciclo (fecha improrrogable).</li>
+              <li><strong>23</strong> Batalla de Pichincha (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+            </ul>
+            <h4>JULIO</h4>
+            <ul>
+              <li><strong>7-15</strong> Consignación de calificaciones de Fin de Ciclo (fecha improrrogable).</li>
+              <li><strong>11</strong> Último día de clases.</li>
+              <li><strong>14</strong> Fecha máxima para la carga de evidencias del personal académico en el repositorio institucional de evidencias de los profesores (RIEP) y legalización de instrumentos académicos de fin de ciclo, previo al proceso de coevaluación docente.</li>
+              <li><strong>14-18</strong> Actividades de refuerzo académico.</li>
+              <li><strong>14-18</strong> Entrega, revisión y aprobación de la propuesta del distributivo de carga académica de profesores de las Sedes: Matriz Riobamba, Morona Santiago y Orellana al Vicerrectorado Académico.</li>
+              <li><strong>16</strong> Publicación de horarios de evaluaciones de recuperación.</li>
+              <li><strong>21-25</strong> Evaluaciones de recuperación.</li>
+              <li><strong>21-25</strong> Recepción de documentos para procesos de homologación (convalidación) de asignaturas para movilidad externa en el Decanato Académico.</li>
+              <li><strong>21-29</strong> Consignación de calificaciones de Evaluaciones de Recuperación (fecha improrrogable).</li>
+              <li><strong>18-30</strong> Capacitación sobre ingreso de información al sistema académico YANKAY previo al proceso de matrículas para el período académico ordinario septiembre 2025 – febrero 2026 (cronograma Decanato Académico).</li>
+              <li><strong>29 de julio – 15 de agosto</strong> Capacitación, registro y legalización de los instrumentos y herramientas de la gestión de académica, previo al inicio de clases, de acuerdo a las políticas académicas.</li>
+              <li><strong>29 de julio – 15 de agosto</strong> Eventos de formación y capacitación: específicos, pedagógicos didácticos dirigidos al personal académico y técnico docente de acuerdo con el plan aprobado por Consejo Politécnico.</li>
+              <li><strong>30</strong> Análisis del distributivo de carga académica en la comisión académica institucional.</li>
+              <li><strong>30</strong> Cierre del sistema académico y fin del periodo académico ordinario marzo 2025 – julio 2025.</li>
+              <li><strong>31 – 1 de agosto</strong> Ingreso de información al sistema académico YANKAY previo al proceso de matrículas para el período académico ordinario septiembre 2025 – febrero 2026 (Coordinador/ de carrera y Analista General de Despacho)</li>
+            </ul>
+            <h4>AGOSTO</h4>
+            <ul>
+              <li><strong>4-8</strong> Periodo para solicitar cambio de carrera, y homologación (convalidación) de asignaturas en el Decanato Académico (interna, traspaso y registro de información al sistema académico YANKAY de estudiantes que fueron admitidos por movilidad externa).</li>
+              <li><strong>4-8</strong> Periodo para presentar solicitudes, autorización de terceras matrículas; y, solicitudes de reingresos.</li>
+              <li><strong>4-8</strong> Matrículas ordinarias según cronograma de sedes matriz Riobamba, Morona Santiago y Orellana.</li>
+              <li><strong>11</strong> Primer grito de la independencia (feriado nacional de acuerdo a la reforma de la Ley Orgánica del Servicio Público).</li>
+              <li><strong>12-15</strong> Período de matrículas extraordinaria, según cronograma de sedes: matriz Riobamba,Morona Santiago y Orellana.</li>
+              <li><strong>18</strong> Receso académico.</li>
+            </ul>
+            <h4>SEPTIEMBRE</h4>
+            <ul>
+              <li><strong>8</strong> Inicio de actividades.</li>
+              <li><strong>8-12</strong> Revisión y ajustes de cursos y paralelos, adecuaciones físicas, aulas y laboratorios.</li>
+              <li><strong>15</strong> Inicio de clases periodo académico ordinario septiembre 2025 – febrero 2026</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
-</div>
-
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <div class="btmspace-80 center">
-      <h3 class="nospace">Hacemos historia</h3>
-      <p class="nospace">Ser una institución de educación superior líder, pertinente y de excelencia en academia, en investigación y vinculación que promueva el enriquecimiento de la cultura...</p>
-    </div>
-    <ul class="nospace group services">
-      <li class="one_third first active">
-        <article class="bgded overlay" style="background-image:url('images/demo/iconos.jpg');">
-          <div class="txtwrap"><i class="block fa fa-4x fa-book"></i>
-            <h6 class="heading">Biblioteca</h6>
-            <p>Nuestras bibliotecas donde descubrirás todo lo que la DBRAI-ESPOCH tiene...</p>
-          </div>
-          <footer><a href="#">Ver &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third active">
-        <article class="bgded overlay" style="background-image:url('images/demo/iconos.jpg');">
-          <div class="txtwrap"><i class="block fa fa-4x fa-wifi"></i>
-            <h6 class="heading">Internet</h6>
-            <p>Permite acceso a la red inalámbrica...</p>
-          </div>
-          <footer><a href="#">Ver &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third active">
-        <article class="bgded overlay" style="background-image:url('images/demo/iconos.jpg');">
-          <div class="txtwrap"><i class="block fa fa-4x fa-medkit"></i>
-            <h6 class="heading">Centro Médico</h6>
-            <p>Centro de Atención en Salud Integral...</p>
-          </div>
-          <footer><a href="#">Ver &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third first active">
-        <article class="bgded overlay" style="background-image:url('images/demo/iconos.jpg');">
-          <div class="txtwrap"><i class="block fa fa-4x fa-language"></i>
-            <h6 class="heading">Centro de Idiomas</h6>
-            <p>El Centro de Idiomas es una Unidad de Apoyo Académico&hellip;</p>
-          </div>
-          <footer><a href="idiomas.html">Ver &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third active">
-        <article class="bgded overlay" style="background-image:url('images/demo/iconos.jpg');">
-          <div class="txtwrap"><i class="block fa fa-4x fa-calendar-alt"></i>
-            <h6 class="heading">Calendario Académico</h6>
-            <p>Fechas de interés académico para los estudiantes politécnicos.&hellip;</p>
-          </div>
-          <footer><a href="#">Ver &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third active">
-        <article class="bgded overlay" style="background-image:url('images/demo/iconos.jpg');">
-          <div class="txtwrap"><i class="block fa fa-4x fa-gavel"></i>
-            <h6 class="heading">Normativa Institucional</h6>
-            <p>Los distintos reglamentos vigentes en la institución&hellip;</p>
-          </div>
-          <footer><a href="#">Ver &raquo;</a></footer>
-        </article>
-      </li>
-    </ul>
-    
-  </main>
-</div>
-
-<div class="wrapper">
-  <article id="shout" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="three_quarter first">
-      <h2 class="heading btmspace-10">Investigación</h2>
-      <p class="nospace">Transformamos el conocimiento a través del pensamiento crítico y la creatividad como una poderosa herramienta que se adentra en la exploración profunda de ideas, conceptos y teorías, buscando nuevas perspectivas para resolver los desafíos del mundo actual.
-
-        Combinamos la teoría y práctica utilizando enfoques didácticos e innovadores con herramientas tecnológicas avanzadas para garantizar una experiencia de aprendizaje efectiva.</p>
-    </div>
-    <footer class="one_quarter"><a class="btn" href="https://www.espoch.edu.ec/arts-in-design/">Mas información</a></footer>
-    <!-- ################################################################################################ -->
-  </article>
-</div>
-
-<div class="wrapper row3">
-  <section class="hoc container clear">
-    <div class="group" style="display: flex; justify-content: center; align-items: center;">
-      <div class="one_third first" style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); color: black;">
-        <h6 class="nospace font-x1" style="font-size: 24px; font-weight: bold;">¿Quiénes Somos?</h6>
-        <p style="font-size: 18px; line-height: 1.6;">Formamos profesionales apasionados por el mundo de la tecnología.</p>
-        <p style="font-size: 18px; line-height: 1.6;">Nuestro enfoque educativo se basa en la excelencia académica, la innovación y la aplicación práctica de conocimientos en áreas como la programación, la inteligencia artificial, la ciberseguridad, la electrónica y más.</p>
-      </div>
-      <article class="one_third" style="flex-grow: 1;">
-        <a href="#"><img class="btmspace-30" src="images/demo/facultad.png" alt="" style="width: 100%; height: auto;"></a>
-      </article>
-    </div>
-  </section>
-</div>
 
 
 <!-- Footer -->
@@ -200,5 +409,17 @@
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
+  
+  <!-- JavaScript para manejar el despliegue -->
+  <script>
+    function toggleCalendario(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>

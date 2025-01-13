@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+21:50:40	3931/3931	---M--	404	error ('Not%20Found')	text/html	date:Mon,%2013%20Jan%202025%2002:50:39%20GMT	https://elibro.net/robots.txt		(from )
+21:50:40	10073/10073	---M--	200	added ('OK')	text/html	date:Mon,%2013%20Jan%202025%2002:50:39%20GMT	https://elibro.net/es/lc/espoch/login_usuario/?next=/es/lc/espoch/inicio/	D:/Cloning/ELibro/elibro.net/es/lc/espoch/login_usuario/index6cc3.html	(from )

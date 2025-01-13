@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+biblioteca.espoch.edu.ec	TRUE	/	FALSE	1999999999	CGISESSID	a417ee553d609f482fcc0781b833d6b1
+biblioteca.espoch.edu.ec	TRUE	/	FALSE	1999999999	SameSite	Lax
+

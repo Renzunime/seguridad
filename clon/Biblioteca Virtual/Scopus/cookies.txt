@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+id.elsevier.com	TRUE	/	FALSE	1999999999	PF	Q1Is2vLitpKjQ02LNpIYWKJhvi28MWZPh0qjigd17sXf
+id.elsevier.com	TRUE	/	FALSE	1999999999	__cflb	02DiuEUZgWyrMRgnWqdShCPZ1oy3hj9hmPaHwEy7YMcbN
+.id.elsevier.com	TRUE	/	FALSE	1999999999	__cf_bm	z3ixz75MmseV7cF464haZLYX.DSuPErldJS8vZ.saMg-1736736718-1.0.1.1-uR8yjooao3f6WLq7SKBWkeOgIdTHJ7cxCoJhcZoDFSKJn2Sm1YvgDysKloxx3FosQrhijStQDcJj3Ds0HAp30A
+id.elsevier.com	TRUE	/	FALSE	1999999999	SameSite	None
+

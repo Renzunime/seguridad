@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+elibro.net	TRUE	/	FALSE	1999999999	csrftoken	JiYMVj1BQuipC9I8n3LjHSoPnv9OTpiyd2buMq0nf83FThOq6sNm6J0yitWylxNR
+elibro.net	TRUE	/	FALSE	1999999999	sessionid	hk2mzy73vsjsjhawi2l9y6vt5gp5j855
+elibro.net	TRUE	/	FALSE	1999999999	SameSite	Lax
+

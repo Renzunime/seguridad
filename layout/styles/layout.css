@@ -363,3 +363,76 @@ table a, #comments a{background-color:inherit;}
 	#pageintro li article{max-width:none; width:100%;}
 	#pageintro li .heading{font-size:1.6rem;}
 }
+/* Estilo para los botones de filtro en fila horizontal */
+.alphabet-filter button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #B41A12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Asegura que los botones estén en fila horizontal */
+    text-align: center;
+}
+
+.alphabet-filter button:hover {
+    background-color: #B41A12;
+}
+
+/* Estilo para la galería */
+#gallery-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#gallery-list li {
+    display: inline-block;
+    width: 23%; /* Cuatro elementos por fila */
+    text-align: center;
+    margin: 1%;
+}
+
+#gallery-list li img {
+    width: 100%;
+    height: auto;
+}
+
+#gallery-list li p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+/* Estilo para los botones de paginación */
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    padding: 10px;
+    background-color: #B41A12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #B41A12;
+}
+
+.pagination .current {
+    font-weight: bold;
+    background-color: #B41A12;
+}

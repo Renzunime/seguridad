@@ -82,41 +82,152 @@ Licence URI: http://www.os-templates.com/template-terms
     <div class="content"> 
       <!-- ################################################################################################ -->
       <div id="gallery">
-        <figure>
-          <header class="heading">Gallery Title Goes Here</header>
-          <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-          </ul>
-          <figcaption>Gallery Description Goes Here</figcaption>
-        </figure>
-      </div>
+    <header class="heading">Catálogo de Bibliotecas Virtuales</header>
+
+<!-- Filtro de letras (todo el alfabeto) -->
+<div class="alphabet-filter" style="text-align: center; margin-bottom: 16px;">
+  <button onclick="filterGallery('A')">A</button>
+  <button onclick="filterGallery('B')">B</button>
+  <button onclick="filterGallery('C')">C</button>
+  <button onclick="filterGallery('D')">D</button>
+  <button onclick="filterGallery('E')">E</button>
+  <button onclick="filterGallery('F')">F</button>
+  <button onclick="filterGallery('G')">G</button>
+  <button onclick="filterGallery('H')">H</button>
+  <button onclick="filterGallery('I')">I</button>
+  <button onclick="filterGallery('J')">J</button>
+  <button onclick="filterGallery('K')">K</button>
+  <button onclick="filterGallery('L')">L</button>
+  <button onclick="filterGallery('M')">M</button>
+  <button onclick="filterGallery('N')">N</button>
+  <button onclick="filterGallery('Ñ')">Ñ</button>
+  <button onclick="filterGallery('O')">O</button>
+  <button onclick="filterGallery('P')">P</button>
+  <button onclick="filterGallery('Q')">Q</button>
+  <button onclick="filterGallery('R')">R</button>
+  <button onclick="filterGallery('S')">S</button>
+  <button onclick="filterGallery('T')">T</button>
+  <button onclick="filterGallery('U')">U</button>
+  <button onclick="filterGallery('V')">V</button>
+  <button onclick="filterGallery('W')">W</button>
+  <button onclick="filterGallery('X')">X</button>
+  <button onclick="filterGallery('Y')">Y</button>
+  <button onclick="filterGallery('Z')">Z</button>
+  <button onclick="filterGallery('')">Ver Todo</button>
+</div>
+
+<div id="gallery">
+
+  <ul class="nospace clear" id="gallery-list">
+      <!-- Cada imagen tiene un data-letter con la primera letra del texto -->
+      <li class="one_quarter first" data-letter="E">
+          <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/elibro.jpg"></a>
+          <p>ELibro</p>
+          <p2>Más de 160.000 títulos en español en todas las áreas del conocimiento.</p2>
+      </li>
+      <li class="one_quarter" data-letter="A">
+          <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/alphacloud.jpg"></a>
+          <p>AlphaCloud</p>
+          <p2>Acceso a más de 2.000 Ebooks en español, de diferentes áreas del conocimiento.</p2>
+      </li>
+      <li class="one_quarter" data-letter="B">
+          <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/bibliotechnia.jpg"></a>
+          <p>BiblioTechnia</p>
+          <p2>Acceso a más de 500 títulos en español, texto completo, en varias áreas del conocimiento.</p2>
+      </li>
+      <li class="one_quarter" data-letter="S">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/scopus.jpg"></a>
+        <p>Scopus</p>
+        <p2>Base de datos multidisciplinaria de citas bibliográficas, útil para obtener el estado del arte, análisis bibliométricos y evaluar la visibilidad y calidad de la investigación, autores, instituciones y revistas.</p2>
+      </li>
+      <li class="one_quarter" data-letter="W">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/web%20of%20science.jpg"></a>
+        <p>Web of Services</p>
+        <p2>Web of Science (WOS) es una plataforma para evaluar y analizar la investigación, con acceso a datos de alta calidad y nuevas tendencias.</p2>
+      </li>
+      <li class="one_quarter" data-letter="Y">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/incites.jpg"></a>
+        <p>Your New Incites</p>
+        <p2>InCites es una herramienta en línea que permite analizar la productividad institucional y compararla con la de otras instituciones a nivel mundial.</p2>
+      </li>      
+      <li class="one_quarter" data-letter="M">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/mathscinet.jpg"></a>
+        <p>Mathscinet</p>
+        <p2>Publicación de AMS con una base de datos de literatura matemática, más de 3,5 millones de artículos y enlaces a más de 1,800 revistas.</p2>
+      </li>      
+      <li class="one_quarter" data-letter="D">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/digitalia%20hispanica.jpg"></a>
+        <p>Digitalia Hispanica</p>
+        <p2>Digitalia Hispánica es una plataforma digital que ofrece acceso a libros electrónicos, revistas y recursos académicos en español.</p2>
+      </li>      
+      <li class="one_quarter" data-letter="A">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/mcgrawhill%20access%20engineering.jpg"></a>
+        <p>Access Engineering</p>
+        <p2>Plataforma con más de 750 eBooks en Ingeniería, que ofrece recursos interactivos como videos, LibGuides y herramientas de aprendizaje a distancia.</p2>
+      </li>      
+      <li class="one_quarter" data-letter="S">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/science%20gov%20new.jpg"></a>
+        <p>Science.Gov</p>
+        <p2>Science.gov busca en más de 60 bases de datos y 2,200 sitios web científicos, ofreciendo acceso a más de 200 millones de páginas de información científica federal autorizada.</p2>
+      </li>
+      <li class="one_quarter" data-letter="R">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/redib%20new.jpg"></a>
+        <p>Redib</p>
+        <p2>REDIB. Plataforma de contenidos científicos y académicos en acceso abierto producidos en el ámbito iberoamericano</p2>
+      </li>
+      <li class="one_quarter" data-letter="R">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/redalyc%20new.jpg"></a>
+        <p>Redalyc</p>
+        <p2>Redalyc es un sistema de indización que integra a su índice las revistas de alta calidad científica y editorial de la región.</p2>
+      </li>
+      <li class="one_quarter" data-letter="I">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/iop%20publishing.jpg"></a>
+        <p>IOP Publishing</p>
+        <p2>IOP Publishing es una editorial científica del Instituto de Física que reinvierte el 100% de sus beneficios en beneficio público y de la comunidad científica.</p2>
+      </li>
+      <li class="one_quarter" data-letter="B">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/base.jpg"></a>
+        <p>Base Bielefeld Academic Search Engine</p>
+        <p2>BASE es un motor de búsqueda académico con más de 340 millones de documentos, ofreciendo acceso gratuito a un 60% de ellos. Es operado por la Universidad de Bielefeld.</p2>
+      </li>
+      <li class="one_quarter" data-letter="S">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/springerlink%20open%20access.jpg"></a>
+        <p>Springer Open Access</p>
+        <p2>Springer Open Access es una plataforma que ofrece acceso abierto a artículos científicos revisados por pares, cubriendo diversas disciplinas y facilitando la difusión de la investigación.</p2>
+      </li>
+      <li class="one_quarter" data-letter="T">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/taylor%20&%20francis%20online%20open%20access.jpg"></a>
+        <p>Taylor Open Access</p>
+        <p2>Taylor Open Access es una plataforma que proporciona acceso abierto a artículos científicos revisados por pares en diversas disciplinas.</p2>
+      </li>
+      <li class="one_quarter" data-letter="S">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/sciencedirect%20open%20access.jpg"></a>
+        <p>Science Direct Open Access</p>
+        <p2>ScienceDirect Open Access es una plataforma que ofrece acceso libre a artículos científicos revisados por pares, cubriendo una amplia gama de disciplinas académicas y de investigación.</p2>
+      </li>
+      <li class="one_quarter" data-letter="J">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/jstor.jpg"></a>
+        <p>Jstor</p>
+        <p2>Acceso a perpetuidad de 160 eBooks de matemáticas a su disposición.</p2>
+      </li>
+      <li class="one_quarter" data-letter="D">
+        <a href="#"><img src="https://referencistas-public.s3.amazonaws.com/lookinterface/images/databases/doab.jpg"></a>
+        <p>Doab</p>
+        <p2>Servicio de descubrimiento de libros de acceso abierto revisados por pares. Abarca todas las disciplinas académicas.</p2>
+      </li>
+      <!-- Agrega más elementos con letras correspondientes -->
+  </ul>
+  <figcaption>Gallery Description Goes Here</figcaption>
+</div>
       <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <nav class="pagination">
+      <!-- Paginación -->
+      <nav class="pagination" id="pagination">
         <ul>
-          <li><a href="#">&laquo; Previous</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">6</a></li>
-          <li class="current"><strong>7</strong></li>
-          <li><a href="#">8</a></li>
-          <li><a href="#">9</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">14</a></li>
-          <li><a href="#">15</a></li>
-          <li><a href="#">Next &raquo;</a></li>
+            <li><a href="#" onclick="goToPage('prev')">&laquo; Anterior</a></li>
+            <li><a href="#" onclick="goToPage(1)">1</a></li>
+            <li><a href="#" onclick="goToPage(2)">2</a></li>
+            <li><a href="#" onclick="goToPage(3)">3</a></li>
+            <li><a href="#" onclick="goToPage('next')">Siguientes &raquo;</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
@@ -182,5 +293,6 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="../layout/scripts/jquery.min.js"></script>
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/galleryscripts.js"></script>
 </body>
 </html>

